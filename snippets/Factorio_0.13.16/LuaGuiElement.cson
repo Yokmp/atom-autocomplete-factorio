@@ -1,0 +1,110 @@
+'.source.lua':
+
+  'LuaGuiElement.add':
+    'prefix': 'add{type=,name=,style=}'
+    'body': 'add'
+    'description': ' Add a child element.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaGuiElement.html#LuaGuiElement.add'
+  
+  'LuaGuiElement.destroy':
+    'prefix': 'destroy()'
+    'body': 'destroy'
+    'description': ' Remove this element, along with its children.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaGuiElement.html#LuaGuiElement.destroy'
+  
+  'LuaGuiElement.gui':
+    'prefix': 'gui'
+    'body': 'gui'
+    'description': '  The GUI this element is a part of.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaGuiElement.html#LuaGuiElement.gui'
+  
+  'LuaGuiElement.parent':
+    'prefix': 'parent'
+    'body': 'parent'
+    'description': '  The direct parent of this element;  if this is a top-level element.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaGuiElement.html#LuaGuiElement.parent'
+  
+  'LuaGuiElement.name':
+    'prefix': 'name'
+    'body': 'name'
+    'description': '  The name of this element.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaGuiElement.html#LuaGuiElement.name'
+  
+  'LuaGuiElement.caption':
+    'prefix': 'caption'
+    'body': 'caption'
+    'description': '  The text displayed on the element.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaGuiElement.html#LuaGuiElement.caption'
+  
+  'LuaGuiElement.value':
+    'prefix': 'value'
+    'body': 'value'
+    'description': '  How much this progress bar is filled.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaGuiElement.html#LuaGuiElement.value'
+  
+  'LuaGuiElement.direction':
+    'prefix': 'direction'
+    'body': 'direction'
+    'description': '  Direction of the layout.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaGuiElement.html#LuaGuiElement.direction'
+  
+  'LuaGuiElement.style':
+    'prefix': 'style'
+    'body': 'style'
+    'description': '  The style of this element.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaGuiElement.html#LuaGuiElement.style'
+  
+  'LuaGuiElement.text':
+    'prefix': 'text'
+    'body': 'text'
+    'description': '  The text contained in a textfield.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaGuiElement.html#LuaGuiElement.text'
+  
+  'LuaGuiElement.children_names':
+    'prefix': 'children_names'
+    'body': 'children_names'
+    'description': '  Names of all the children of this element.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaGuiElement.html#LuaGuiElement.children_names'
+  
+  'LuaGuiElement.state':
+    'prefix': 'state'
+    'body': 'state'
+    'description': '  Is this checkbox checked?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaGuiElement.html#LuaGuiElement.state'
+  
+  'LuaGuiElement.player_index':
+    'prefix': 'player_index'
+    'body': 'player_index'
+    'description': '  Index into  specifying the player who owns this element.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaGuiElement.html#LuaGuiElement.player_index'
+  
+  'LuaGuiElement.sprite':
+    'prefix': 'sprite'
+    'body': 'sprite'
+    'description': '  Path the the image to display on this sprite-button.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaGuiElement.html#LuaGuiElement.sprite'
+  
+  'LuaGuiElement.tooltip':
+    'prefix': 'tooltip'
+    'body': 'tooltip'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaGuiElement.html#LuaGuiElement.tooltip'
+  
+  'LuaGuiElement.vertical_scroll_policy':
+    'prefix': 'vertical_scroll_policy'
+    'body': 'vertical_scroll_policy'
+    'description': ' Allowed values are: "always", "never", or "auto"  '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaGuiElement.html#LuaGuiElement.vertical_scroll_policy'
+  
+  'LuaGuiElement.horizontal_scroll_policy':
+    'prefix': 'horizontal_scroll_policy'
+    'body': 'horizontal_scroll_policy'
+    'description': ' Allowed values are: "always", "never", or "auto"  '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaGuiElement.html#LuaGuiElement.horizontal_scroll_policy'
+  
+  'Common.valid':
+    'prefix': 'valid'
+    'body': 'valid'
+    'description': '        Is this object valid?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/Common.html#Common.valid'
+  

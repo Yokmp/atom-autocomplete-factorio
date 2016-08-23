@@ -1,0 +1,50 @@
+'.source.lua':
+
+  'LuaFlowStatistics.get_input_count':
+    'prefix': 'get_input_count(string)'
+    'body': 'get_input_count'
+    'description': ' Gets the total input count for a given prototype.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaFlowStatistics.html#LuaFlowStatistics.get_input_count'
+  
+  'LuaFlowStatistics.set_input_count':
+    'prefix': 'set_input_count(string,count)'
+    'body': 'set_input_count'
+    'description': ' Sets the total input count for a given prototype.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaFlowStatistics.html#LuaFlowStatistics.set_input_count'
+  
+  'LuaFlowStatistics.get_output_count':
+    'prefix': 'get_output_count(string)'
+    'body': 'get_output_count'
+    'description': ' Gets the total output count for a given prototype.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaFlowStatistics.html#LuaFlowStatistics.get_output_count'
+  
+  'LuaFlowStatistics.set_output_count':
+    'prefix': 'set_output_count(string,count)'
+    'body': 'set_output_count'
+    'description': ' Sets the total output count for a given prototype.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaFlowStatistics.html#LuaFlowStatistics.set_output_count'
+  
+  'LuaFlowStatistics.input_counts':
+    'prefix': 'input_counts'
+    'body': 'input_counts'
+    'description': '  List of input counts indexed by name <> value.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaFlowStatistics.html#LuaFlowStatistics.input_counts'
+  
+  'LuaFlowStatistics.output_counts':
+    'prefix': 'output_counts'
+    'body': 'output_counts'
+    'description': '  List of output counts indexed by name <> value.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaFlowStatistics.html#LuaFlowStatistics.output_counts'
+  
+  'LuaFlowStatistics.force':
+    'prefix': 'force'
+    'body': 'force'
+    'description': '  The force these statistics belong to.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaFlowStatistics.html#LuaFlowStatistics.force'
+  
+  'Common.valid':
+    'prefix': 'valid'
+    'body': 'valid'
+    'description': '        Is this object valid?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/Common.html#Common.valid'
+  

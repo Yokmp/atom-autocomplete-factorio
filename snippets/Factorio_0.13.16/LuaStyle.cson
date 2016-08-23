@@ -1,0 +1,104 @@
+'.source.lua':
+
+  'LuaStyle.gui':
+    'prefix': 'gui'
+    'body': 'gui'
+    'description': '  Gui of the  of this style.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaStyle.html#LuaStyle.gui'
+  
+  'LuaStyle.name':
+    'prefix': 'name'
+    'body': 'name'
+    'description': '  Name of this style.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaStyle.html#LuaStyle.name'
+  
+  'LuaStyle.minimal_width':
+    'prefix': 'minimal_width'
+    'body': 'minimal_width'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaStyle.html#LuaStyle.minimal_width'
+  
+  'LuaStyle.maximal_width':
+    'prefix': 'maximal_width'
+    'body': 'maximal_width'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaStyle.html#LuaStyle.maximal_width'
+  
+  'LuaStyle.minimal_height':
+    'prefix': 'minimal_height'
+    'body': 'minimal_height'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaStyle.html#LuaStyle.minimal_height'
+  
+  'LuaStyle.maximal_height':
+    'prefix': 'maximal_height'
+    'body': 'maximal_height'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaStyle.html#LuaStyle.maximal_height'
+  
+  'LuaStyle.top_padding':
+    'prefix': 'top_padding'
+    'body': 'top_padding'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaStyle.html#LuaStyle.top_padding'
+  
+  'LuaStyle.right_padding':
+    'prefix': 'right_padding'
+    'body': 'right_padding'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaStyle.html#LuaStyle.right_padding'
+  
+  'LuaStyle.bottom_padding':
+    'prefix': 'bottom_padding'
+    'body': 'bottom_padding'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaStyle.html#LuaStyle.bottom_padding'
+  
+  'LuaStyle.left_padding':
+    'prefix': 'left_padding'
+    'body': 'left_padding'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaStyle.html#LuaStyle.left_padding'
+  
+  'LuaStyle.font_color':
+    'prefix': 'font_color'
+    'body': 'font_color'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaStyle.html#LuaStyle.font_color'
+  
+  'LuaStyle.font':
+    'prefix': 'font'
+    'body': 'font'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaStyle.html#LuaStyle.font'
+  
+  'LuaStyle.resize_row_to_width':
+    'prefix': 'resize_row_to_width'
+    'body': 'resize_row_to_width'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaStyle.html#LuaStyle.resize_row_to_width'
+  
+  'LuaStyle.cell_spacing':
+    'prefix': 'cell_spacing'
+    'body': 'cell_spacing'
+    'description': '  Space between the table cell contents and border.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaStyle.html#LuaStyle.cell_spacing'
+  
+  'LuaStyle.horizontal_spacing':
+    'prefix': 'horizontal_spacing'
+    'body': 'horizontal_spacing'
+    'description': '  Horizontal space between individual cells.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaStyle.html#LuaStyle.horizontal_spacing'
+  
+  'LuaStyle.vertical_spacing':
+    'prefix': 'vertical_spacing'
+    'body': 'vertical_spacing'
+    'description': '  Vertical space between individual cells.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaStyle.html#LuaStyle.vertical_spacing'
+  
+  'Common.valid':
+    'prefix': 'valid'
+    'body': 'valid'
+    'description': '        Is this object valid?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/Common.html#Common.valid'
+  

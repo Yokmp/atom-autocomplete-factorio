@@ -1,0 +1,92 @@
+'.source.lua':
+
+  'LuaFluidPrototype.name':
+    'prefix': 'name'
+    'body': 'name'
+    'description': '  Name of this prototype.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaFluidPrototype.html#LuaFluidPrototype.name'
+  
+  'LuaFluidPrototype.localised_name':
+    'prefix': 'localised_name'
+    'body': 'localised_name'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaFluidPrototype.html#LuaFluidPrototype.localised_name'
+  
+  'LuaFluidPrototype.default_temperature':
+    'prefix': 'default_temperature'
+    'body': 'default_temperature'
+    'description': '  Default temperature of the fluid.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaFluidPrototype.html#LuaFluidPrototype.default_temperature'
+  
+  'LuaFluidPrototype.max_temperature':
+    'prefix': 'max_temperature'
+    'body': 'max_temperature'
+    'description': '  Maximum temperature the fluid can reach.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaFluidPrototype.html#LuaFluidPrototype.max_temperature'
+  
+  'LuaFluidPrototype.heat_capacity':
+    'prefix': 'heat_capacity'
+    'body': 'heat_capacity'
+    'description': '  How much energy the fluid will generate at max temperature assuming 100% efficiency steam engine.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaFluidPrototype.html#LuaFluidPrototype.heat_capacity'
+  
+  'LuaFluidPrototype.pressure_to_speed_ratio':
+    'prefix': 'pressure_to_speed_ratio'
+    'body': 'pressure_to_speed_ratio'
+    'description': '  How much pressure -- difference in fluid levels -- will be converted to speed.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaFluidPrototype.html#LuaFluidPrototype.pressure_to_speed_ratio'
+  
+  'LuaFluidPrototype.flow_to_energy_ratio':
+    'prefix': 'flow_to_energy_ratio'
+    'body': 'flow_to_energy_ratio'
+    'description': '  How much will a volume of fluid transferred be converted to energy.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaFluidPrototype.html#LuaFluidPrototype.flow_to_energy_ratio'
+  
+  'LuaFluidPrototype.max_push_amount':
+    'prefix': 'max_push_amount'
+    'body': 'max_push_amount'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaFluidPrototype.html#LuaFluidPrototype.max_push_amount'
+  
+  'LuaFluidPrototype.ratio_to_push':
+    'prefix': 'ratio_to_push'
+    'body': 'ratio_to_push'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaFluidPrototype.html#LuaFluidPrototype.ratio_to_push'
+  
+  'LuaFluidPrototype.order':
+    'prefix': 'order'
+    'body': 'order'
+    'description': '  Order string for this prototype.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaFluidPrototype.html#LuaFluidPrototype.order'
+  
+  'LuaFluidPrototype.group':
+    'prefix': 'group'
+    'body': 'group'
+    'description': '  Group of this prototype.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaFluidPrototype.html#LuaFluidPrototype.group'
+  
+  'LuaFluidPrototype.subgroup':
+    'prefix': 'subgroup'
+    'body': 'subgroup'
+    'description': '  Subgroup of this prototype.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaFluidPrototype.html#LuaFluidPrototype.subgroup'
+  
+  'LuaFluidPrototype.base_color':
+    'prefix': 'base_color'
+    'body': 'base_color'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaFluidPrototype.html#LuaFluidPrototype.base_color'
+  
+  'LuaFluidPrototype.flow_color':
+    'prefix': 'flow_color'
+    'body': 'flow_color'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaFluidPrototype.html#LuaFluidPrototype.flow_color'
+  
+  'Common.valid':
+    'prefix': 'valid'
+    'body': 'valid'
+    'description': '        Is this object valid?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/Common.html#Common.valid'
+  

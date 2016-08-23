@@ -1,0 +1,8 @@
+'.source.lua':
+
+  'Common.valid':
+    'prefix': 'valid'
+    'body': 'valid'
+    'description': '        Is this object valid?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/Common.html#Common.valid'
+  

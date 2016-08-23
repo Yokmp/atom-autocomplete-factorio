@@ -1,0 +1,122 @@
+'.source.lua':
+
+  'LuaTrain.get_item_count':
+    'prefix': 'get_item_count(item)'
+    'body': 'get_item_count'
+    'description': ' Get the amount of a particular item stored in the train.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTrain.html#LuaTrain.get_item_count'
+  
+  'LuaTrain.get_contents':
+    'prefix': 'get_contents()'
+    'body': 'get_contents'
+    'description': ' Get a summary of the train's inventory.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTrain.html#LuaTrain.get_contents'
+  
+  'LuaTrain.remove_item':
+    'prefix': 'remove_item(stack)'
+    'body': 'remove_item'
+    'description': ' Remove some items from the train.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTrain.html#LuaTrain.remove_item'
+  
+  'LuaTrain.insert':
+    'prefix': 'insert(stack)'
+    'body': 'insert'
+    'description': ' Insert a stack into the train.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTrain.html#LuaTrain.insert'
+  
+  'LuaTrain.clear_items_inside':
+    'prefix': 'clear_items_inside()'
+    'body': 'clear_items_inside'
+    'description': ' Clear all items in this train.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTrain.html#LuaTrain.clear_items_inside'
+  
+  'LuaTrain.manual_mode':
+    'prefix': 'manual_mode'
+    'body': 'manual_mode'
+    'description': '  When , the train is explicitly controlled by the player or script.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTrain.html#LuaTrain.manual_mode'
+  
+  'LuaTrain.speed':
+    'prefix': 'speed'
+    'body': 'speed'
+    'description': '  Current speed.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTrain.html#LuaTrain.speed'
+  
+  'LuaTrain.carriages':
+    'prefix': 'carriages'
+    'body': 'carriages'
+    'description': '  Rolling stocks the train is composed of.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTrain.html#LuaTrain.carriages'
+  
+  'LuaTrain.locomotives':
+    'prefix': 'locomotives'
+    'body': 'locomotives'
+    'description': '  Arrays of locomotives.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTrain.html#LuaTrain.locomotives'
+  
+  'LuaTrain.cargo_wagons':
+    'prefix': 'cargo_wagons'
+    'body': 'cargo_wagons'
+    'description': '  The cargo carriages the train contains.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTrain.html#LuaTrain.cargo_wagons'
+  
+  'LuaTrain.schedule':
+    'prefix': 'schedule'
+    'body': 'schedule'
+    'description': '  '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTrain.html#LuaTrain.schedule'
+  
+  'LuaTrain.state':
+    'prefix': 'state'
+    'body': 'state'
+    'description': '  This train's current state.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTrain.html#LuaTrain.state'
+  
+  'LuaTrain.front_rail':
+    'prefix': 'front_rail'
+    'body': 'front_rail'
+    'description': '  The rail at the front end of the train, possibly .'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTrain.html#LuaTrain.front_rail'
+  
+  'LuaTrain.back_rail':
+    'prefix': 'back_rail'
+    'body': 'back_rail'
+    'description': '  The rail at the back end of the train, possibly .'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTrain.html#LuaTrain.back_rail'
+  
+  'LuaTrain.rail_direction_from_front_rail':
+    'prefix': 'rail_direction_from_front_rail'
+    'body': 'rail_direction_from_front_rail'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTrain.html#LuaTrain.rail_direction_from_front_rail'
+  
+  'LuaTrain.rail_direction_from_back_rail':
+    'prefix': 'rail_direction_from_back_rail'
+    'body': 'rail_direction_from_back_rail'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTrain.html#LuaTrain.rail_direction_from_back_rail'
+  
+  'LuaTrain.front_stock':
+    'prefix': 'front_stock'
+    'body': 'front_stock'
+    'description': '  The front stock of this train or .'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTrain.html#LuaTrain.front_stock'
+  
+  'LuaTrain.back_stock':
+    'prefix': 'back_stock'
+    'body': 'back_stock'
+    'description': '  The back stock of this train or .'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTrain.html#LuaTrain.back_stock'
+  
+  'LuaTrain.station':
+    'prefix': 'station'
+    'body': 'station'
+    'description': ' The train stop this train is stopped at or .'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTrain.html#LuaTrain.station'
+  
+  'Common.valid':
+    'prefix': 'valid'
+    'body': 'valid'
+    'description': '        Is this object valid?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/Common.html#Common.valid'
+  

@@ -1,0 +1,98 @@
+'.source.lua':
+
+  'LuaTilePrototype.name':
+    'prefix': 'name'
+    'body': 'name'
+    'description': '  Name of this prototype.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTilePrototype.html#LuaTilePrototype.name'
+  
+  'LuaTilePrototype.order':
+    'prefix': 'order'
+    'body': 'order'
+    'description': '  Order string of this prototype.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTilePrototype.html#LuaTilePrototype.order'
+  
+  'LuaTilePrototype.localised_name':
+    'prefix': 'localised_name'
+    'body': 'localised_name'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTilePrototype.html#LuaTilePrototype.localised_name'
+  
+  'LuaTilePrototype.collision_mask':
+    'prefix': 'collision_mask'
+    'body': 'collision_mask'
+    'description': '  The collison mask this tile uses'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTilePrototype.html#LuaTilePrototype.collision_mask'
+  
+  'LuaTilePrototype.layer':
+    'prefix': 'layer'
+    'body': 'layer'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTilePrototype.html#LuaTilePrototype.layer'
+  
+  'LuaTilePrototype.walking_speed_modifier':
+    'prefix': 'walking_speed_modifier'
+    'body': 'walking_speed_modifier'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTilePrototype.html#LuaTilePrototype.walking_speed_modifier'
+  
+  'LuaTilePrototype.vehicle_friction_modifier':
+    'prefix': 'vehicle_friction_modifier'
+    'body': 'vehicle_friction_modifier'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTilePrototype.html#LuaTilePrototype.vehicle_friction_modifier'
+  
+  'LuaTilePrototype.map_color':
+    'prefix': 'map_color'
+    'body': 'map_color'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTilePrototype.html#LuaTilePrototype.map_color'
+  
+  'LuaTilePrototype.decorative_removal_probability':
+    'prefix': 'decorative_removal_probability'
+    'body': 'decorative_removal_probability'
+    'description': '  The probability that decorative entities will be removed from on top of this tile when this tile is generated.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTilePrototype.html#LuaTilePrototype.decorative_removal_probability'
+  
+  'LuaTilePrototype.allowed_neighbors':
+    'prefix': 'allowed_neighbors'
+    'body': 'allowed_neighbors'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTilePrototype.html#LuaTilePrototype.allowed_neighbors'
+  
+  'LuaTilePrototype.mineable_properties':
+    'prefix': 'mineable_properties'
+    'body': 'mineable_properties'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTilePrototype.html#LuaTilePrototype.mineable_properties'
+  
+  'LuaTilePrototype.items_to_place_this':
+    'prefix': 'items_to_place_this'
+    'body': 'items_to_place_this'
+    'description': '  Items that when placed will produce this tile.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTilePrototype.html#LuaTilePrototype.items_to_place_this'
+  
+  'LuaTilePrototype.can_be_part_of_blueprint':
+    'prefix': 'can_be_part_of_blueprint'
+    'body': 'can_be_part_of_blueprint'
+    'description': '  False if this tile is not allowed in blueprints regardless of the ability to build it.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTilePrototype.html#LuaTilePrototype.can_be_part_of_blueprint'
+  
+  'LuaTilePrototype.emissions_per_tick':
+    'prefix': 'emissions_per_tick'
+    'body': 'emissions_per_tick'
+    'description': '  Amount of pollution emissions per tick this tile will absorb.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTilePrototype.html#LuaTilePrototype.emissions_per_tick'
+  
+  'LuaTilePrototype.autoplace_specification':
+    'prefix': 'autoplace_specification'
+    'body': 'autoplace_specification'
+    'description': ' Autoplace specification for this prototype.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTilePrototype.html#LuaTilePrototype.autoplace_specification'
+  
+  'Common.valid':
+    'prefix': 'valid'
+    'body': 'valid'
+    'description': '        Is this object valid?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/Common.html#Common.valid'
+  

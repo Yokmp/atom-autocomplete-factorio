@@ -1,0 +1,38 @@
+'.source.lua':
+
+  'LuaGui.is_valid_sprite_path':
+    'prefix': 'is_valid_sprite_path(sprite_path)'
+    'body': 'is_valid_sprite_path'
+    'description': ' Returns  if sprite_path is valid and contains loaded sprite, otherwise .'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaGui.html#LuaGui.is_valid_sprite_path'
+  
+  'LuaGui.player':
+    'prefix': 'player'
+    'body': 'player'
+    'description': '  The player who owns this gui.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaGui.html#LuaGui.player'
+  
+  'LuaGui.top':
+    'prefix': 'top'
+    'body': 'top'
+    'description': '      The top part of the GUI.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaGui.html#LuaGui.top'
+  
+  'LuaGui.left':
+    'prefix': 'left'
+    'body': 'left'
+    'description': '      The left part of the GUI.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaGui.html#LuaGui.left'
+  
+  'LuaGui.center':
+    'prefix': 'center'
+    'body': 'center'
+    'description': '      The center part of the GUI.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaGui.html#LuaGui.center'
+  
+  'Common.valid':
+    'prefix': 'valid'
+    'body': 'valid'
+    'description': '        Is this object valid?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/Common.html#Common.valid'
+  

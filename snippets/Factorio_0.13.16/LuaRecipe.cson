@@ -1,0 +1,86 @@
+'.source.lua':
+
+  'LuaRecipe.reload':
+    'prefix': 'reload()'
+    'body': 'reload'
+    'description': ' Reload the recipe from the prototype.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaRecipe.html#LuaRecipe.reload'
+  
+  'LuaRecipe.enabled':
+    'prefix': 'enabled'
+    'body': 'enabled'
+    'description': ' Can the recipe be used?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaRecipe.html#LuaRecipe.enabled'
+  
+  'LuaRecipe.name':
+    'prefix': 'name'
+    'body': 'name'
+    'description': ' Name of the recipe.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaRecipe.html#LuaRecipe.name'
+  
+  'LuaRecipe.localised_name':
+    'prefix': 'localised_name'
+    'body': 'localised_name'
+    'description': ' Localised name of the recipe.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaRecipe.html#LuaRecipe.localised_name'
+  
+  'LuaRecipe.category':
+    'prefix': 'category'
+    'body': 'category'
+    'description': ' Category of the recipe.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaRecipe.html#LuaRecipe.category'
+  
+  'LuaRecipe.ingredients':
+    'prefix': 'ingredients'
+    'body': 'ingredients'
+    'description': ' Ingredients for this recipe.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaRecipe.html#LuaRecipe.ingredients'
+  
+  'LuaRecipe.products':
+    'prefix': 'products'
+    'body': 'products'
+    'description': '  The results of this recipe.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaRecipe.html#LuaRecipe.products'
+  
+  'LuaRecipe.hidden':
+    'prefix': 'hidden'
+    'body': 'hidden'
+    'description': ' Is the recipe hidden?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaRecipe.html#LuaRecipe.hidden'
+  
+  'LuaRecipe.energy':
+    'prefix': 'energy'
+    'body': 'energy'
+    'description': ' Energy required to execute this recipe.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaRecipe.html#LuaRecipe.energy'
+  
+  'LuaRecipe.order':
+    'prefix': 'order'
+    'body': 'order'
+    'description': ' Order string.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaRecipe.html#LuaRecipe.order'
+  
+  'LuaRecipe.group':
+    'prefix': 'group'
+    'body': 'group'
+    'description': ' Group of this recipe.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaRecipe.html#LuaRecipe.group'
+  
+  'LuaRecipe.subgroup':
+    'prefix': 'subgroup'
+    'body': 'subgroup'
+    'description': ' Subgroup of this recipe.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaRecipe.html#LuaRecipe.subgroup'
+  
+  'LuaRecipe.force':
+    'prefix': 'force'
+    'body': 'force'
+    'description': ' The force that owns this recipe.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaRecipe.html#LuaRecipe.force'
+  
+  'Common.valid':
+    'prefix': 'valid'
+    'body': 'valid'
+    'description': '        Is this object valid?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/Common.html#Common.valid'
+  
