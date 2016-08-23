@@ -12,15 +12,15 @@ You need a couple of extra Programms.
 + PHP 5.x
 + Cygwin or Mingw(untested)
 
-- Download and install both Programs. Install wget for Cygwin/Mingw if you want the latest Version from lua-api.factorio.com.
-- Get this Repository.
-- Now open this Repo and navigate to autogen/ in your Filemanager.
-- startup Cygwin and navigate to autogen/ too.
-- open start.sh in a Texteditor.
-- Change the configuration Path to your doc-html folder of your Factorio installation
-```#********* START configuration
-pathtodocs="/cygdrive/d/Factorio/doc-html" # /cygdrive/d/ is your drive D:\ on Windows
-#*********** END configuration```
++ Download and install both Programs. Install wget for Cygwin/Mingw if you want the latest Version from lua-api.factorio.com.
++ Get this Repository.
++ Now open this Repo and navigate to autogen/ in your Filemanager.
++ startup Cygwin and navigate to autogen/ too.
++ open start.sh in a Texteditor.
++ Change the configuration Path to your doc-html folder of your Factorio installation
+
+```pathtodocs="/cygdrive/d/Factorio/doc-html" # /cygdrive/d/ is your drive D:\ on Windows```
+
 - execute ```source start.sh```
 - Wait.
 - move the new created directory Factorio_versionnumber into your %appdata%/.atom/packages/atom-autocomplete-factorio/snippets folder
