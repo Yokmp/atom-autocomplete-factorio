@@ -1,2 +1,2 @@
-# language-lua-factorio
-Factorio Lua API extension for Atom
+# atom-autocomplete-factorio
+Factorio Lua API autocomplete for Atom.
