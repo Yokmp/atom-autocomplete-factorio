@@ -1,6 +1,6 @@
 # atom-autocomplete-factorio
 Factorio Lua API autocomplete for Atom.
-Factorio version is 0.13.16. To create one for your version please scoll down.
+Factorio version is 0.15.33. To create one for your version please scoll down.
 
 [Forum topic - Autocomplete for Atom](https://forums.factorio.com/viewtopic.php?f=135&t=31456&sid=f324b0d762343de5332f9a132fc5aa08)
 
