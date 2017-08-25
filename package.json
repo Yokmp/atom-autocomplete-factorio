@@ -1,0 +1,33 @@
+{
+  "name": "provider-factrio-lua-api",
+  "main": "./lib/main",
+  "keywords": ["autocomplete", "provider", "factorio"],
+  "license": "GNU",
+  "version": "1.1.0",
+  "dependencies": {},
+  "activationHooks": ["language-lua:grammar-used"],
+  "description": "Factorio's Lua API autocomplete support in Atom",
+  "readme": "# Autocomplete-Factorio-api package\n\nAn autocompletition for Factorio's LUA-API .\n\n### Updates\n[x] resolved some Bugs\n",
+  "readmeFilename": "README.md",
+  "author": {
+    "name": "Yokmp",
+    "email": "yokmp.sf@gmail.com"
+  },
+  "engines": {
+    "atom": ">=0.50.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yokmp/atom-autocomplete-factorio.git"
+  },
+  "bugs": {
+    "url": "ghttps://github.com/Yokmp/atom-autocomplete-factorio/issues"
+  },
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getProvider"
+      }
+    }
+  }
+}
