@@ -4,7 +4,7 @@ Factorio version is 0.15.33. To create one for your version please scoll down.
 
 [Forum topic - Autocomplete for Atom](https://forums.factorio.com/viewtopic.php?f=135&t=31456&sid=f324b0d762343de5332f9a132fc5aa08)
 
-### How to create Snippets for another Version?
+### How to create Suggestions for another Version?
 
 First things first:
 You need a couple of extra Programms.
@@ -23,6 +23,4 @@ You need a couple of extra Programms.
 
 - execute ```source start.sh```
 - Wait.
-- move the new created directory Factorio_versionnumber into your %appdata%/.atom/packages/atom-autocomplete-factorio/snippets folder
-- delete the old factorio_version folder
-- Restart Atom.
+- Restart Atom ([CTRL]+[SHIFT]+[F5]).
