@@ -1,0 +1,206 @@
+'.source.lua':
+
+  'LuaItemStack.is_blueprint_setup':
+    'prefix': 'is_blueprint_setup()'
+    'body': 'is_blueprint_setup'
+    'description': ' Is this blueprint item setup?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.is_blueprint_setup'
+  
+  'LuaItemStack.get_blueprint_entities':
+    'prefix': 'get_blueprint_entities()'
+    'body': 'get_blueprint_entities'
+    'description': ' Entities in this blueprint.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.get_blueprint_entities'
+  
+  'LuaItemStack.set_blueprint_entities':
+    'prefix': 'set_blueprint_entities(entities)'
+    'body': 'set_blueprint_entities'
+    'description': ' Set new entities to be a part of this blueprint.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.set_blueprint_entities'
+  
+  'LuaItemStack.add_ammo':
+    'prefix': 'add_ammo(amount)'
+    'body': 'add_ammo'
+    'description': ' Add ammo to this ammo item.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.add_ammo'
+  
+  'LuaItemStack.drain_ammo':
+    'prefix': 'drain_ammo(amount)'
+    'body': 'drain_ammo'
+    'description': ' Remove ammo from this ammo item.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.drain_ammo'
+  
+  'LuaItemStack.add_durability':
+    'prefix': 'add_durability(amount)'
+    'body': 'add_durability'
+    'description': ' Add durability to this tool item.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.add_durability'
+  
+  'LuaItemStack.drain_durability':
+    'prefix': 'drain_durability(amount)'
+    'body': 'drain_durability'
+    'description': ' Remove durability from this tool item.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.drain_durability'
+  
+  'LuaItemStack.can_set_stack':
+    'prefix': 'can_set_stack(stack)'
+    'body': 'can_set_stack'
+    'description': ' Would a call to  succeed?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.can_set_stack'
+  
+  'LuaItemStack.set_stack':
+    'prefix': 'set_stack(stack)'
+    'body': 'set_stack'
+    'description': ' Set this item stack to another item stack.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.set_stack'
+  
+  'LuaItemStack.clear':
+    'prefix': 'clear()'
+    'body': 'clear'
+    'description': ' Clear this item stack.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.clear'
+  
+  'LuaItemStack.get_blueprint_tiles':
+    'prefix': 'get_blueprint_tiles()'
+    'body': 'get_blueprint_tiles'
+    'description': ' Tiles in this blueprint  '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.get_blueprint_tiles'
+  
+  'LuaItemStack.set_blueprint_tiles':
+    'prefix': 'set_blueprint_tiles(tiles)'
+    'body': 'set_blueprint_tiles'
+    'description': ' Set tiles in this blueprint  '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.set_blueprint_tiles'
+  
+  'LuaItemStack.get_inventory':
+    'prefix': 'get_inventory(inventory)'
+    'body': 'get_inventory'
+    'description': ' Access the inner inventory of an item.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.get_inventory'
+  
+  'LuaItemStack.build_blueprint':
+    'prefix': 'build_blueprint{surface=,force=,position=,force_build=,direction=}'
+    'body': 'build_blueprint'
+    'description': ' Build this blueprint  '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.build_blueprint'
+  
+  'LuaItemStack.create_blueprint':
+    'prefix': 'create_blueprint{surface=,force=,area=,always_include_tiles=}'
+    'body': 'create_blueprint'
+    'description': ' Sets up this blueprint using the found blueprintable entities/tiles on the surface.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.create_blueprint'
+  
+  'LuaItemStack.valid_for_read':
+    'prefix': 'valid_for_read'
+    'body': 'valid_for_read'
+    'description': '  Is this valid for reading?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.valid_for_read'
+  
+  'LuaItemStack.prototype':
+    'prefix': 'prototype'
+    'body': 'prototype'
+    'description': '  Prototype of the item held in this stack.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.prototype'
+  
+  'LuaItemStack.name':
+    'prefix': 'name'
+    'body': 'name'
+    'description': '  Prototype name of the item held in this stack.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.name'
+  
+  'LuaItemStack.type':
+    'prefix': 'type'
+    'body': 'type'
+    'description': '  Type of the item prototype.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.type'
+  
+  'LuaItemStack.count':
+    'prefix': 'count'
+    'body': 'count'
+    'description': '  Number of items in this stack.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.count'
+  
+  'LuaItemStack.has_grid':
+    'prefix': 'has_grid'
+    'body': 'has_grid'
+    'description': '   if this item has an equipment grid.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.has_grid'
+  
+  'LuaItemStack.grid':
+    'prefix': 'grid'
+    'body': 'grid'
+    'description': '  The equipment grid of this item.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.grid'
+  
+  'LuaItemStack.health':
+    'prefix': 'health'
+    'body': 'health'
+    'description': '  How much health the item has, as a number in range [0, 1].'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.health'
+  
+  'LuaItemStack.durability':
+    'prefix': 'durability'
+    'body': 'durability'
+    'description': '  Durability of the contained item.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.durability'
+  
+  'LuaItemStack.ammo':
+    'prefix': 'ammo'
+    'body': 'ammo'
+    'description': '  Number of bullets left in the magazine.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.ammo'
+  
+  'LuaItemStack.blueprint_icons':
+    'prefix': 'blueprint_icons'
+    'body': 'blueprint_icons'
+    'description': '  Icons of a blueprint item.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.blueprint_icons'
+  
+  'LuaItemStack.label':
+    'prefix': 'label'
+    'body': 'label'
+    'description': '  The current label for this item.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.label'
+  
+  'LuaItemStack.label_color':
+    'prefix': 'label_color'
+    'body': 'label_color'
+    'description': '  The current label color for this item.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.label_color'
+  
+  'LuaItemStack.allow_manual_label_change':
+    'prefix': 'allow_manual_label_change'
+    'body': 'allow_manual_label_change'
+    'description': '  If the label for this item can be manually changed.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.allow_manual_label_change'
+  
+  'LuaItemStack.cost_to_build':
+    'prefix': 'cost_to_build'
+    'body': 'cost_to_build'
+    'description': '  Raw materials required to build this blueprint.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.cost_to_build'
+  
+  'LuaItemStack.extends_inventory':
+    'prefix': 'extends_inventory'
+    'body': 'extends_inventory'
+    'description': '  If this item extends the inventory it resides in (provides its contents for counts, crafting, insertion).'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.extends_inventory'
+  
+  'LuaItemStack.prioritize_insertion_mode':
+    'prefix': 'prioritize_insertion_mode'
+    'body': 'prioritize_insertion_mode'
+    'description': '  The insertion mode priority this ItemWithInventory uses when items are inserted into an inventory it resides in.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.prioritize_insertion_mode'
+  
+  'LuaItemStack.default_icons':
+    'prefix': 'default_icons'
+    'body': 'default_icons'
+    'description': '  The default icons for a blueprint item.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.default_icons'
+  
+  'Common.valid':
+    'prefix': 'valid'
+    'body': 'valid'
+    'description': '        Is this object valid?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/Common.html#Common.valid'
+  

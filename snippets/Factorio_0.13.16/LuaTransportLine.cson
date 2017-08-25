@@ -1,0 +1,62 @@
+'.source.lua':
+
+  'LuaTransportLine.clear':
+    'prefix': 'clear()'
+    'body': 'clear'
+    'description': ' Remove all items from this transport line.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTransportLine.html#LuaTransportLine.clear'
+  
+  'LuaTransportLine.get_item_count':
+    'prefix': 'get_item_count(item)'
+    'body': 'get_item_count'
+    'description': ' Count some or all items on this line.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTransportLine.html#LuaTransportLine.get_item_count'
+  
+  'LuaTransportLine.remove_item':
+    'prefix': 'remove_item(items)'
+    'body': 'remove_item'
+    'description': ' Remove some items from this line.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTransportLine.html#LuaTransportLine.remove_item'
+  
+  'LuaTransportLine.can_insert_at':
+    'prefix': 'can_insert_at(position)'
+    'body': 'can_insert_at'
+    'description': ' Can an item be inserted at a given position?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTransportLine.html#LuaTransportLine.can_insert_at'
+  
+  'LuaTransportLine.can_insert_at_back':
+    'prefix': 'can_insert_at_back()'
+    'body': 'can_insert_at_back'
+    'description': ' Can an item be inserted at the back of this line?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTransportLine.html#LuaTransportLine.can_insert_at_back'
+  
+  'LuaTransportLine.insert_at':
+    'prefix': 'insert_at(position,items)'
+    'body': 'insert_at'
+    'description': ' Insert items at a given position.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTransportLine.html#LuaTransportLine.insert_at'
+  
+  'LuaTransportLine.insert_at_back':
+    'prefix': 'insert_at_back(items)'
+    'body': 'insert_at_back'
+    'description': ' Insert items at the back of this line.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTransportLine.html#LuaTransportLine.insert_at_back'
+  
+  'LuaTransportLine.get_contents':
+    'prefix': 'get_contents()'
+    'body': 'get_contents'
+    'description': ' Get counts of all items on this line.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTransportLine.html#LuaTransportLine.get_contents'
+  
+  'LuaTransportLine.owner':
+    'prefix': 'owner'
+    'body': 'owner'
+    'description': '  The entity this transport line belongs to.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaTransportLine.html#LuaTransportLine.owner'
+  
+  'Common.valid':
+    'prefix': 'valid'
+    'body': 'valid'
+    'description': '        Is this object valid?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/Common.html#Common.valid'
+  

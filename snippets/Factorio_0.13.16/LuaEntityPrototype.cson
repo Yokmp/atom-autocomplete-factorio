@@ -1,0 +1,212 @@
+'.source.lua':
+
+  'LuaEntityPrototype.has_flag':
+    'prefix': 'has_flag(flag)'
+    'body': 'has_flag'
+    'description': ' Does this prototype have a flag enabled?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.has_flag'
+  
+  'LuaEntityPrototype.type':
+    'prefix': 'type'
+    'body': 'type'
+    'description': '  Type of this prototype.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.type'
+  
+  'LuaEntityPrototype.name':
+    'prefix': 'name'
+    'body': 'name'
+    'description': '  Name of this prototype.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.name'
+  
+  'LuaEntityPrototype.localised_name':
+    'prefix': 'localised_name'
+    'body': 'localised_name'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.localised_name'
+  
+  'LuaEntityPrototype.max_health':
+    'prefix': 'max_health'
+    'body': 'max_health'
+    'description': '  Max health of this entity.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.max_health'
+  
+  'LuaEntityPrototype.infinite_resource':
+    'prefix': 'infinite_resource'
+    'body': 'infinite_resource'
+    'description': '  Is this resource infinite?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.infinite_resource'
+  
+  'LuaEntityPrototype.minimum_resource_amount':
+    'prefix': 'minimum_resource_amount'
+    'body': 'minimum_resource_amount'
+    'description': '  Minimum amount of this resource.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.minimum_resource_amount'
+  
+  'LuaEntityPrototype.resource_category':
+    'prefix': 'resource_category'
+    'body': 'resource_category'
+    'description': '  Category of this resource.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.resource_category'
+  
+  'LuaEntityPrototype.mineable_properties':
+    'prefix': 'mineable_properties'
+    'body': 'mineable_properties'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.mineable_properties'
+  
+  'LuaEntityPrototype.items_to_place_this':
+    'prefix': 'items_to_place_this'
+    'body': 'items_to_place_this'
+    'description': '  Items that when placed will produce this entity.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.items_to_place_this'
+  
+  'LuaEntityPrototype.collision_box':
+    'prefix': 'collision_box'
+    'body': 'collision_box'
+    'description': '  The bounding box used for collision checking.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.collision_box'
+  
+  'LuaEntityPrototype.selection_box':
+    'prefix': 'selection_box'
+    'body': 'selection_box'
+    'description': '  The bounding box used for drawing selection.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.selection_box'
+  
+  'LuaEntityPrototype.order':
+    'prefix': 'order'
+    'body': 'order'
+    'description': '  Order string of this prototype.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.order'
+  
+  'LuaEntityPrototype.group':
+    'prefix': 'group'
+    'body': 'group'
+    'description': '  Group of this entity.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.group'
+  
+  'LuaEntityPrototype.subgroup':
+    'prefix': 'subgroup'
+    'body': 'subgroup'
+    'description': '  Subgroup of this entity.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.subgroup'
+  
+  'LuaEntityPrototype.healing_per_tick':
+    'prefix': 'healing_per_tick'
+    'body': 'healing_per_tick'
+    'description': '  Amount this entity can heal per tick.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.healing_per_tick'
+  
+  'LuaEntityPrototype.emissions_per_tick':
+    'prefix': 'emissions_per_tick'
+    'body': 'emissions_per_tick'
+    'description': '  Amount of pollution emissions per tick this entity will create.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.emissions_per_tick'
+  
+  'LuaEntityPrototype.corpses':
+    'prefix': 'corpses'
+    'body': 'corpses'
+    'description': '  Corpses used when this entity is destroyed.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.corpses'
+  
+  'LuaEntityPrototype.selectable_in_game':
+    'prefix': 'selectable_in_game'
+    'body': 'selectable_in_game'
+    'description': '  Is this entity selectable?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.selectable_in_game'
+  
+  'LuaEntityPrototype.weight':
+    'prefix': 'weight'
+    'body': 'weight'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.weight'
+  
+  'LuaEntityPrototype.resistances':
+    'prefix': 'resistances'
+    'body': 'resistances'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.resistances'
+  
+  'LuaEntityPrototype.fast_replaceable_group':
+    'prefix': 'fast_replaceable_group'
+    'body': 'fast_replaceable_group'
+    'description': '  The group of mutually fast-replaceable entities.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.fast_replaceable_group'
+  
+  'LuaEntityPrototype.loot':
+    'prefix': 'loot'
+    'body': 'loot'
+    'description': '  Loot that will be dropped when this entity is killed.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.loot'
+  
+  'LuaEntityPrototype.repair_speed_modifier':
+    'prefix': 'repair_speed_modifier'
+    'body': 'repair_speed_modifier'
+    'description': '  Repair-speed modifier for this entity.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.repair_speed_modifier'
+  
+  'LuaEntityPrototype.turret_range':
+    'prefix': 'turret_range'
+    'body': 'turret_range'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.turret_range'
+  
+  'LuaEntityPrototype.autoplace_specification':
+    'prefix': 'autoplace_specification'
+    'body': 'autoplace_specification'
+    'description': ' Autoplace specification for this entity prototype.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.autoplace_specification'
+  
+  'LuaEntityPrototype.collision_mask':
+    'prefix': 'collision_mask'
+    'body': 'collision_mask'
+    'description': '  The collison masks this entity uses'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.collision_mask'
+  
+  'LuaEntityPrototype.belt_speed':
+    'prefix': 'belt_speed'
+    'body': 'belt_speed'
+    'description': '  The speed of this transport belt or  if this isn't a transport belt related prototype.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.belt_speed'
+  
+  'LuaEntityPrototype.underground_belt_distance':
+    'prefix': 'underground_belt_distance'
+    'body': 'underground_belt_distance'
+    'description': '  The max connection distance this underground belt prototype can connect at or  if this isn't an underground belt prototype.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.underground_belt_distance'
+  
+  'LuaEntityPrototype.result_units':
+    'prefix': 'result_units'
+    'body': 'result_units'
+    'description': '  The result units and spawn points with weight and evolution factor for a biter spawner entity.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.result_units'
+  
+  'LuaEntityPrototype.attack_result':
+    'prefix': 'attack_result'
+    'body': 'attack_result'
+    'description': ' The attack result of this entity if the entity has one else .'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.attack_result'
+  
+  'LuaEntityPrototype.final_attack_result':
+    'prefix': 'final_attack_result'
+    'body': 'final_attack_result'
+    'description': ' The final attack result for projectiles  if not a projectile'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.final_attack_result'
+  
+  'LuaEntityPrototype.spawn_cooldown':
+    'prefix': 'spawn_cooldown'
+    'body': 'spawn_cooldown'
+    'description': ' The spawning cooldown for this enemy spawner prototype or .'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.spawn_cooldown'
+  
+  'LuaEntityPrototype.mining_drill_radius':
+    'prefix': 'mining_drill_radius'
+    'body': 'mining_drill_radius'
+    'description': ' The mining radius of this mining drill prototype or  if this isn't a mining drill prototype.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntityPrototype.html#LuaEntityPrototype.mining_drill_radius'
+  
+  'Common.valid':
+    'prefix': 'valid'
+    'body': 'valid'
+    'description': '        Is this object valid?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/Common.html#Common.valid'
+  

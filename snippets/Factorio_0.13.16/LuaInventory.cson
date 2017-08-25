@@ -1,0 +1,116 @@
+'.source.lua':
+
+  'LuaInventory.clear':
+    'prefix': 'clear()'
+    'body': 'clear'
+    'description': ' Make this inventory empty.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaInventory.html#LuaInventory.clear'
+  
+  'LuaInventory.can_insert':
+    'prefix': 'can_insert(items)'
+    'body': 'can_insert'
+    'description': ' Can at least some items be inserted?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaInventory.html#LuaInventory.can_insert'
+  
+  'LuaInventory.insert':
+    'prefix': 'insert(items)'
+    'body': 'insert'
+    'description': ' Insert items into this inventory.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaInventory.html#LuaInventory.insert'
+  
+  'LuaInventory.remove':
+    'prefix': 'remove(items)'
+    'body': 'remove'
+    'description': ' Remove items from this inventory.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaInventory.html#LuaInventory.remove'
+  
+  'LuaInventory.get_item_count':
+    'prefix': 'get_item_count(item)'
+    'body': 'get_item_count'
+    'description': ' Get the number of all or some items in this inventory.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaInventory.html#LuaInventory.get_item_count'
+  
+  'LuaInventory.is_empty':
+    'prefix': 'is_empty()'
+    'body': 'is_empty'
+    'description': ' Does this inventory contain nothing?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaInventory.html#LuaInventory.is_empty'
+  
+  'LuaInventory.get_contents':
+    'prefix': 'get_contents()'
+    'body': 'get_contents'
+    'description': ' Get counts of all items in this inventory.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaInventory.html#LuaInventory.get_contents'
+  
+  'LuaInventory.hasbar':
+    'prefix': 'hasbar()'
+    'body': 'hasbar'
+    'description': ' Does this inventory have a bar?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaInventory.html#LuaInventory.hasbar'
+  
+  'LuaInventory.getbar':
+    'prefix': 'getbar()'
+    'body': 'getbar'
+    'description': ' Get the current bar.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaInventory.html#LuaInventory.getbar'
+  
+  'LuaInventory.setbar':
+    'prefix': 'setbar(bar)'
+    'body': 'setbar'
+    'description': ' Set the current bar.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaInventory.html#LuaInventory.setbar'
+  
+  'LuaInventory.has_filters':
+    'prefix': 'has_filters()'
+    'body': 'has_filters'
+    'description': ' If this inventory has filters '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaInventory.html#LuaInventory.has_filters'
+  
+  'LuaInventory.can_set_filter':
+    'prefix': 'can_set_filter(index,filter)'
+    'body': 'can_set_filter'
+    'description': ' If the given inventory slot filter can be set to the given filter.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaInventory.html#LuaInventory.can_set_filter'
+  
+  'LuaInventory.get_filter':
+    'prefix': 'get_filter(index)'
+    'body': 'get_filter'
+    'description': ' Gets the filter for the given item stack index.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaInventory.html#LuaInventory.get_filter'
+  
+  'LuaInventory.set_filter':
+    'prefix': 'set_filter(index,filter)'
+    'body': 'set_filter'
+    'description': ' Sets the filter for the given item stack index.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaInventory.html#LuaInventory.set_filter'
+  
+  'LuaInventory.find_item_stack':
+    'prefix': 'find_item_stack(item)'
+    'body': 'find_item_stack'
+    'description': ' Gets the first LuaItemStack in the inventory that matches the given item name.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaInventory.html#LuaInventory.find_item_stack'
+  
+  '':
+    'prefix': 'operator#'
+    'body': 'operator#'
+    'description': ' Get the number of slots in this inventory.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaInventory.html#LuaInventory.operator #'
+  
+  'LuaInventory.index':
+    'prefix': 'index'
+    'body': 'index'
+    'description': '  The inventory index this inventory uses.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaInventory.html#LuaInventory.index'
+  
+  'LuaInventory.operator []':
+    'prefix': 'operator[]'
+    'body': 'operator[]'
+    'description': ' The indexing operator.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaInventory.html#LuaInventory.operator []'
+  
+  'Common.valid':
+    'prefix': 'valid'
+    'body': 'valid'
+    'description': '        Is this object valid?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/Common.html#Common.valid'
+  

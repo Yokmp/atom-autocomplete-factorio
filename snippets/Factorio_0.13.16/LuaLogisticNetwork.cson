@@ -1,0 +1,110 @@
+'.source.lua':
+
+  'LuaLogisticNetwork.get_item_count':
+    'prefix': 'get_item_count(item,member)'
+    'body': 'get_item_count'
+    'description': ' Count given or all items in the network or given members.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaLogisticNetwork.html#LuaLogisticNetwork.get_item_count'
+  
+  'LuaLogisticNetwork.get_contents':
+    'prefix': 'get_contents()'
+    'body': 'get_contents'
+    'description': ' Get item counts for the entire network.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaLogisticNetwork.html#LuaLogisticNetwork.get_contents'
+  
+  'LuaLogisticNetwork.remove_item':
+    'prefix': 'remove_item(item,members)'
+    'body': 'remove_item'
+    'description': ' Remove items from the logistic network.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaLogisticNetwork.html#LuaLogisticNetwork.remove_item'
+  
+  'LuaLogisticNetwork.insert':
+    'prefix': 'insert(item,members)'
+    'body': 'insert'
+    'description': ' Insert items into the logistic network.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaLogisticNetwork.html#LuaLogisticNetwork.insert'
+  
+  'LuaLogisticNetwork.find_cell_closest_to':
+    'prefix': 'find_cell_closest_to(position)'
+    'body': 'find_cell_closest_to'
+    'description': ' Find logistic cell closest to a given position.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaLogisticNetwork.html#LuaLogisticNetwork.find_cell_closest_to'
+  
+  'LuaLogisticNetwork.available_logistic_robots':
+    'prefix': 'available_logistic_robots'
+    'body': 'available_logistic_robots'
+    'description': '  Number of logistic robots available for a job.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaLogisticNetwork.html#LuaLogisticNetwork.available_logistic_robots'
+  
+  'LuaLogisticNetwork.all_logistic_robots':
+    'prefix': 'all_logistic_robots'
+    'body': 'all_logistic_robots'
+    'description': '  The total number of logistic robots in the network (idle and active + in roboports).'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaLogisticNetwork.html#LuaLogisticNetwork.all_logistic_robots'
+  
+  'LuaLogisticNetwork.available_construction_robots':
+    'prefix': 'available_construction_robots'
+    'body': 'available_construction_robots'
+    'description': '  Number of construction robots available for a job.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaLogisticNetwork.html#LuaLogisticNetwork.available_construction_robots'
+  
+  'LuaLogisticNetwork.all_construction_robots':
+    'prefix': 'all_construction_robots'
+    'body': 'all_construction_robots'
+    'description': '  The total number of construction robots in the network (idle and active + in roboports).'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaLogisticNetwork.html#LuaLogisticNetwork.all_construction_robots'
+  
+  'LuaLogisticNetwork.robot_limit':
+    'prefix': 'robot_limit'
+    'body': 'robot_limit'
+    'description': '  Maximum number of robots the network can work with.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaLogisticNetwork.html#LuaLogisticNetwork.robot_limit'
+  
+  'LuaLogisticNetwork.cells':
+    'prefix': 'cells'
+    'body': 'cells'
+    'description': '  All cells in this network.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaLogisticNetwork.html#LuaLogisticNetwork.cells'
+  
+  'LuaLogisticNetwork.providers':
+    'prefix': 'providers'
+    'body': 'providers'
+    'description': '  All entities that have logistic provider points in this network.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaLogisticNetwork.html#LuaLogisticNetwork.providers'
+  
+  'LuaLogisticNetwork.empty_providers':
+    'prefix': 'empty_providers'
+    'body': 'empty_providers'
+    'description': '  All entities that have empty logistic provider points in this network.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaLogisticNetwork.html#LuaLogisticNetwork.empty_providers'
+  
+  'LuaLogisticNetwork.requesters':
+    'prefix': 'requesters'
+    'body': 'requesters'
+    'description': '  All entities that have logistic requester points in this network.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaLogisticNetwork.html#LuaLogisticNetwork.requesters'
+  
+  'LuaLogisticNetwork.full_or_satisfied_requesters':
+    'prefix': 'full_or_satisfied_requesters'
+    'body': 'full_or_satisfied_requesters'
+    'description': '  All entities that have full or satisfied logistic requester points in this network.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaLogisticNetwork.html#LuaLogisticNetwork.full_or_satisfied_requesters'
+  
+  'LuaLogisticNetwork.storages':
+    'prefix': 'storages'
+    'body': 'storages'
+    'description': '  All entities that have logistic storage points in this network.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaLogisticNetwork.html#LuaLogisticNetwork.storages'
+  
+  'LuaLogisticNetwork.logistic_members':
+    'prefix': 'logistic_members'
+    'body': 'logistic_members'
+    'description': '  All other entities that have logistic points in this network (inserters mostly).'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaLogisticNetwork.html#LuaLogisticNetwork.logistic_members'
+  
+  'Common.valid':
+    'prefix': 'valid'
+    'body': 'valid'
+    'description': '        Is this object valid?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/Common.html#Common.valid'
+  

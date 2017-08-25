@@ -1,0 +1,38 @@
+'.source.lua':
+
+  'LuaCircuitNetwork.get_signal':
+    'prefix': 'get_signal(SignalID)'
+    'body': 'get_signal'
+    'description': '   The current value of the signal.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaCircuitNetwork.html#LuaCircuitNetwork.get_signal'
+  
+  'LuaCircuitNetwork.entity':
+    'prefix': 'entity'
+    'body': 'entity'
+    'description': '  The entity this circuit network reference is associated with'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaCircuitNetwork.html#LuaCircuitNetwork.entity'
+  
+  'LuaCircuitNetwork.wire_type':
+    'prefix': 'wire_type'
+    'body': 'wire_type'
+    'description': '  The wire type this network is associated with.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaCircuitNetwork.html#LuaCircuitNetwork.wire_type'
+  
+  'LuaCircuitNetwork.circuit_connector_id':
+    'prefix': 'circuit_connector_id'
+    'body': 'circuit_connector_id'
+    'description': '  The circuit connector ID on the associated entity this network was gotten from.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaCircuitNetwork.html#LuaCircuitNetwork.circuit_connector_id'
+  
+  'LuaCircuitNetwork.signals':
+    'prefix': 'signals'
+    'body': 'signals'
+    'description': '  The circuit network signals last tick.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaCircuitNetwork.html#LuaCircuitNetwork.signals'
+  
+  'Common.valid':
+    'prefix': 'valid'
+    'body': 'valid'
+    'description': '        Is this object valid?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/Common.html#Common.valid'
+  

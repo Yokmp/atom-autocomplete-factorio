@@ -1,0 +1,38 @@
+'.source.lua':
+
+  'LuaVirtualSignalPrototype.name':
+    'prefix': 'name'
+    'body': 'name'
+    'description': '  Name of this prototype.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaVirtualSignalPrototype.html#LuaVirtualSignalPrototype.name'
+  
+  'LuaVirtualSignalPrototype.order':
+    'prefix': 'order'
+    'body': 'order'
+    'description': '  Order string of this prototype.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaVirtualSignalPrototype.html#LuaVirtualSignalPrototype.order'
+  
+  'LuaVirtualSignalPrototype.localised_name':
+    'prefix': 'localised_name'
+    'body': 'localised_name'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaVirtualSignalPrototype.html#LuaVirtualSignalPrototype.localised_name'
+  
+  'LuaVirtualSignalPrototype.special':
+    'prefix': 'special'
+    'body': 'special'
+    'description': ' If this is a special signal '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaVirtualSignalPrototype.html#LuaVirtualSignalPrototype.special'
+  
+  'LuaVirtualSignalPrototype.subgroup':
+    'prefix': 'subgroup'
+    'body': 'subgroup'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaVirtualSignalPrototype.html#LuaVirtualSignalPrototype.subgroup'
+  
+  'Common.valid':
+    'prefix': 'valid'
+    'body': 'valid'
+    'description': '        Is this object valid?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/Common.html#Common.valid'
+  

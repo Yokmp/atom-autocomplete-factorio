@@ -1,0 +1,32 @@
+'.source.lua':
+
+  'LuaBootstrap.on_init':
+    'prefix': 'on_init(f)'
+    'body': 'on_init'
+    'description': ' Register a callback to be run on mod init.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaBootstrap.html#LuaBootstrap.on_init'
+  
+  'LuaBootstrap.on_load':
+    'prefix': 'on_load(f)'
+    'body': 'on_load'
+    'description': ' Register a function to be run on module load.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaBootstrap.html#LuaBootstrap.on_load'
+  
+  'LuaBootstrap.on_configuration_changed':
+    'prefix': 'on_configuration_changed(f)'
+    'body': 'on_configuration_changed'
+    'description': ' Register a function to be run when mod configuration changes.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaBootstrap.html#LuaBootstrap.on_configuration_changed'
+  
+  'LuaBootstrap.on_event':
+    'prefix': 'on_event(event,f)'
+    'body': 'on_event'
+    'description': ' Register a handler to run on event or events.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaBootstrap.html#LuaBootstrap.on_event'
+  
+  'LuaBootstrap.generate_event_name':
+    'prefix': 'generate_event_name()'
+    'body': 'generate_event_name'
+    'description': ' Generate a new, unique event ID.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaBootstrap.html#LuaBootstrap.generate_event_name'
+  

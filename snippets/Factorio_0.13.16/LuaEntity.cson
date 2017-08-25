@@ -1,0 +1,656 @@
+'.source.lua':
+
+  'LuaEntity.get_output_inventory':
+    'prefix': 'get_output_inventory()'
+    'body': 'get_output_inventory'
+    'description': ' Gets the entities output inventory if it has one.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.get_output_inventory'
+  
+  'LuaEntity.get_module_inventory':
+    'prefix': 'get_module_inventory()'
+    'body': 'get_module_inventory'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.get_module_inventory'
+  
+  'LuaEntity.get_fuel_inventory':
+    'prefix': 'get_fuel_inventory()'
+    'body': 'get_fuel_inventory'
+    'description': ' The fuel inventory for this entity or  if this entity doesn't have a fuel inventory.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.get_fuel_inventory'
+  
+  'LuaEntity.damage':
+    'prefix': 'damage(damage,force,type)'
+    'body': 'damage'
+    'description': ' Damages the entity.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.damage'
+  
+  'LuaEntity.destroy':
+    'prefix': 'destroy()'
+    'body': 'destroy'
+    'description': ' Destroys the entity.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.destroy'
+  
+  'LuaEntity.set_command':
+    'prefix': 'set_command(command)'
+    'body': 'set_command'
+    'description': ' Give the entity a command.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.set_command'
+  
+  'LuaEntity.has_command':
+    'prefix': 'has_command()'
+    'body': 'has_command'
+    'description': ' Has this unit been assigned a command?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.has_command'
+  
+  'LuaEntity.die':
+    'prefix': 'die()'
+    'body': 'die'
+    'description': ' Immediately kills the entity.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.die'
+  
+  'LuaEntity.has_flag':
+    'prefix': 'has_flag(flag)'
+    'body': 'has_flag'
+    'description': ' Test whether this entity's prototype has a flag set.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.has_flag'
+  
+  'LuaEntity.add_market_item':
+    'prefix': 'add_market_item{price=,offer=}'
+    'body': 'add_market_item'
+    'description': ' Offer a thing on the market.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.add_market_item'
+  
+  'LuaEntity.remove_market_item':
+    'prefix': 'remove_market_item(offer)'
+    'body': 'remove_market_item'
+    'description': ' Remove an offer from a market.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.remove_market_item'
+  
+  'LuaEntity.get_market_items':
+    'prefix': 'get_market_items()'
+    'body': 'get_market_items'
+    'description': ' Get all offers in a market as an array.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.get_market_items'
+  
+  'LuaEntity.connect_neighbour':
+    'prefix': 'connect_neighbour(target)'
+    'body': 'connect_neighbour'
+    'description': ' Connect two devices with wire or cable.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.connect_neighbour'
+  
+  'LuaEntity.disconnect_neighbour':
+    'prefix': 'disconnect_neighbour(target)'
+    'body': 'disconnect_neighbour'
+    'description': ' Disconnect wires or cables.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.disconnect_neighbour'
+  
+  'LuaEntity.order_deconstruction':
+    'prefix': 'order_deconstruction(force)'
+    'body': 'order_deconstruction'
+    'description': ' Sets the entity to be deconstructed by construction robots.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.order_deconstruction'
+  
+  'LuaEntity.cancel_deconstruction':
+    'prefix': 'cancel_deconstruction(force)'
+    'body': 'cancel_deconstruction'
+    'description': ' Cancels deconstruction if it is scheduled, does nothing otherwise.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.cancel_deconstruction'
+  
+  'LuaEntity.to_be_deconstructed':
+    'prefix': 'to_be_deconstructed(force)'
+    'body': 'to_be_deconstructed'
+    'description': ' Is this entity marked for deconstruction?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.to_be_deconstructed'
+  
+  'LuaEntity.get_request_slot':
+    'prefix': 'get_request_slot(slot)'
+    'body': 'get_request_slot'
+    'description': ' Get a logistic requester slot.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.get_request_slot'
+  
+  'LuaEntity.set_request_slot':
+    'prefix': 'set_request_slot(request,slot)'
+    'body': 'set_request_slot'
+    'description': ' Set a logistic requester slot.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.set_request_slot'
+  
+  'LuaEntity.clear_request_slot':
+    'prefix': 'clear_request_slot(slot)'
+    'body': 'clear_request_slot'
+    'description': ' Clear a logistic requester slot.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.clear_request_slot'
+  
+  'LuaEntity.is_crafting':
+    'prefix': 'is_crafting()'
+    'body': 'is_crafting'
+    'description': '  '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.is_crafting'
+  
+  'LuaEntity.is_opened':
+    'prefix': 'is_opened()'
+    'body': 'is_opened'
+    'description': '  '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.is_opened'
+  
+  'LuaEntity.is_opening':
+    'prefix': 'is_opening()'
+    'body': 'is_opening'
+    'description': '  '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.is_opening'
+  
+  'LuaEntity.is_closed':
+    'prefix': 'is_closed()'
+    'body': 'is_closed'
+    'description': '  '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.is_closed'
+  
+  'LuaEntity.is_closing':
+    'prefix': 'is_closing()'
+    'body': 'is_closing'
+    'description': '  '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.is_closing'
+  
+  'LuaEntity.request_to_open':
+    'prefix': 'request_to_open(force,extra_time)'
+    'body': 'request_to_open'
+    'description': '   '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.request_to_open'
+  
+  'LuaEntity.request_to_close':
+    'prefix': 'request_to_close(force)'
+    'body': 'request_to_close'
+    'description': '  '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.request_to_close'
+  
+  'LuaEntity.get_transport_line':
+    'prefix': 'get_transport_line(index)'
+    'body': 'get_transport_line'
+    'description': ' Get a transport line of a belt.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.get_transport_line'
+  
+  'LuaEntity.launch_rocket':
+    'prefix': 'launch_rocket()'
+    'body': 'launch_rocket'
+    'description': '  '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.launch_rocket'
+  
+  'LuaEntity.revive':
+    'prefix': 'revive()'
+    'body': 'revive'
+    'description': ' Revive a ghost.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.revive'
+  
+  'LuaEntity.get_connected_rail':
+    'prefix': 'get_connected_rail{rail_direction=,rail_connection_direction=}'
+    'body': 'get_connected_rail'
+    'description': '   '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.get_connected_rail'
+  
+  'LuaEntity.get_filter':
+    'prefix': 'get_filter(uint)'
+    'body': 'get_filter'
+    'description': ' Get the filter for a slot in an inserter or a loader.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.get_filter'
+  
+  'LuaEntity.set_filter':
+    'prefix': 'set_filter(uint,string)'
+    'body': 'set_filter'
+    'description': ' Set the filter for a slot in an inserter or a loader   '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.set_filter'
+  
+  'LuaEntity.get_control_behavior':
+    'prefix': 'get_control_behavior()'
+    'body': 'get_control_behavior'
+    'description': ' Gets the control behavior of the entity (if any).'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.get_control_behavior'
+  
+  'LuaEntity.get_or_create_control_behavior':
+    'prefix': 'get_or_create_control_behavior()'
+    'body': 'get_or_create_control_behavior'
+    'description': ' Gets (and or creates if needed) the control behavior of the entity.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.get_or_create_control_behavior'
+  
+  'LuaEntity.get_circuit_network':
+    'prefix': 'get_circuit_network(wire,circuit_connector)'
+    'body': 'get_circuit_network'
+    'description': '   '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.get_circuit_network'
+  
+  'LuaEntity.supports_backer_name':
+    'prefix': 'supports_backer_name()'
+    'body': 'supports_backer_name'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.supports_backer_name'
+  
+  'LuaEntity.copy_settings':
+    'prefix': 'copy_settings(entity)'
+    'body': 'copy_settings'
+    'description': ' Copies settings from the given entity onto this entity.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.copy_settings'
+  
+  'LuaEntity.passenger':
+    'prefix': 'passenger'
+    'body': 'passenger'
+    'description': ' Setting to  forces the character out of the vehicle, setting to a new character forces any existing passenger out and the given character becomes the new passenger.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.passenger'
+  
+  'LuaEntity.name':
+    'prefix': 'name'
+    'body': 'name'
+    'description': ' Name of the entity prototype.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.name'
+  
+  'LuaEntity.ghost_name':
+    'prefix': 'ghost_name'
+    'body': 'ghost_name'
+    'description': ' Name of the entity contained in this ghost  '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.ghost_name'
+  
+  'LuaEntity.localised_name':
+    'prefix': 'localised_name'
+    'body': 'localised_name'
+    'description': ' Localised name of the entity.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.localised_name'
+  
+  'LuaEntity.ghost_localised_name':
+    'prefix': 'ghost_localised_name'
+    'body': 'ghost_localised_name'
+    'description': ' Localised name of the entity contained in this ghost.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.ghost_localised_name'
+  
+  'LuaEntity.type':
+    'prefix': 'type'
+    'body': 'type'
+    'description': '  The entity prototype type of this entity.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.type'
+  
+  'LuaEntity.ghost_type':
+    'prefix': 'ghost_type'
+    'body': 'ghost_type'
+    'description': '  The prototype type of the entity contained in this ghost.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.ghost_type'
+  
+  'LuaEntity.active':
+    'prefix': 'active'
+    'body': 'active'
+    'description': ' Deactivating an entity will stop all its operations (car will stop moving, inserters will stop working, fish will stop moving etc).'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.active'
+  
+  'LuaEntity.destructible':
+    'prefix': 'destructible'
+    'body': 'destructible'
+    'description': ' When the entity is not destructible it can't be damaged.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.destructible'
+  
+  'LuaEntity.minable':
+    'prefix': 'minable'
+    'body': 'minable'
+    'description': '   '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.minable'
+  
+  'LuaEntity.rotatable':
+    'prefix': 'rotatable'
+    'body': 'rotatable'
+    'description': ' When entity is not to be rotatable (inserter, transport belt etc), it can't be rotated by player using the R key.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.rotatable'
+  
+  'LuaEntity.operable':
+    'prefix': 'operable'
+    'body': 'operable'
+    'description': ' Player can't open gui of this entity and he can't quick insert/input stuff in to the entity when it is not operable.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.operable'
+  
+  'LuaEntity.health':
+    'prefix': 'health'
+    'body': 'health'
+    'description': '  Health of the entity.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.health'
+  
+  'LuaEntity.direction':
+    'prefix': 'direction'
+    'body': 'direction'
+    'description': ' The current direction this entity is facing.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.direction'
+  
+  'LuaEntity.orientation':
+    'prefix': 'orientation'
+    'body': 'orientation'
+    'description': ' The smooth orientation.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.orientation'
+  
+  'LuaEntity.amount':
+    'prefix': 'amount'
+    'body': 'amount'
+    'description': '  Count of resource units contained.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.amount'
+  
+  'LuaEntity.effectivity_modifier':
+    'prefix': 'effectivity_modifier'
+    'body': 'effectivity_modifier'
+    'description': ' Multiplies the acceleration the vehicle can create for one unit of energy.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.effectivity_modifier'
+  
+  'LuaEntity.consumption_modifier':
+    'prefix': 'consumption_modifier'
+    'body': 'consumption_modifier'
+    'description': ' Multiplies the the energy consumption.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.consumption_modifier'
+  
+  'LuaEntity.friction_modifier':
+    'prefix': 'friction_modifier'
+    'body': 'friction_modifier'
+    'description': ' Multiplies the car friction rate.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.friction_modifier'
+  
+  'LuaEntity.speed':
+    'prefix': 'speed'
+    'body': 'speed'
+    'description': ' The current speed of the car.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.speed'
+  
+  'LuaEntity.stack':
+    'prefix': 'stack'
+    'body': 'stack'
+    'description': '  '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.stack'
+  
+  'LuaEntity.prototype':
+    'prefix': 'prototype'
+    'body': 'prototype'
+    'description': '  The entity prototype of this entity.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.prototype'
+  
+  'LuaEntity.ghost_prototype':
+    'prefix': 'ghost_prototype'
+    'body': 'ghost_prototype'
+    'description': '  The entity prototype of the entity contained in this ghost.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.ghost_prototype'
+  
+  'LuaEntity.drop_position':
+    'prefix': 'drop_position'
+    'body': 'drop_position'
+    'description': ' Position where the entity puts its stuff.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.drop_position'
+  
+  'LuaEntity.pickup_position':
+    'prefix': 'pickup_position'
+    'body': 'pickup_position'
+    'description': ' Where the inserter will pick up items from.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.pickup_position'
+  
+  'LuaEntity.drop_target':
+    'prefix': 'drop_target'
+    'body': 'drop_target'
+    'description': ' The entity this entity is putting its stuff to or  if there is no such entity.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.drop_target'
+  
+  'LuaEntity.pickup_target':
+    'prefix': 'pickup_target'
+    'body': 'pickup_target'
+    'description': ' The entity the inserter will attempt to pick up from.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.pickup_target'
+  
+  'LuaEntity.selected_gun_index':
+    'prefix': 'selected_gun_index'
+    'body': 'selected_gun_index'
+    'description': ' Index of the currently selected weapon slot of this character.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.selected_gun_index'
+  
+  'LuaEntity.energy':
+    'prefix': 'energy'
+    'body': 'energy'
+    'description': ' Energy stored in the entity (heat in furnace, energy stored in electrical devices etc.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.energy'
+  
+  'LuaEntity.recipe':
+    'prefix': 'recipe'
+    'body': 'recipe'
+    'description': ' Current recipe being assembled by this machine.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.recipe'
+  
+  'LuaEntity.held_stack':
+    'prefix': 'held_stack'
+    'body': 'held_stack'
+    'description': ' The item stack currently held in an inserter's hand.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.held_stack'
+  
+  'LuaEntity.held_stack_position':
+    'prefix': 'held_stack_position'
+    'body': 'held_stack_position'
+    'description': ' Current position of the inserter's "hand".'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.held_stack_position'
+  
+  'LuaEntity.train':
+    'prefix': 'train'
+    'body': 'train'
+    'description': ' The train this rolling stock belongs to.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.train'
+  
+  'LuaEntity.neighbours':
+    'prefix': 'neighbours'
+    'body': 'neighbours'
+    'description': '  '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.neighbours'
+  
+  'LuaEntity.fluidbox':
+    'prefix': 'fluidbox'
+    'body': 'fluidbox'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.fluidbox'
+  
+  'LuaEntity.backer_name':
+    'prefix': 'backer_name'
+    'body': 'backer_name'
+    'description': ' The name of a backer (of Factorio) assigned to a lab or train station / stop.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.backer_name'
+  
+  'LuaEntity.time_to_live':
+    'prefix': 'time_to_live'
+    'body': 'time_to_live'
+    'description': ' The ticks left for a ghost entity before it's destroyed.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.time_to_live'
+  
+  'LuaEntity.color':
+    'prefix': 'color'
+    'body': 'color'
+    'description': ' The character or rolling stock color.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.color'
+  
+  'LuaEntity.signal_state':
+    'prefix': 'signal_state'
+    'body': 'signal_state'
+    'description': ' The state of this rail signal.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.signal_state'
+  
+  'LuaEntity.chain_signal_state':
+    'prefix': 'chain_signal_state'
+    'body': 'chain_signal_state'
+    'description': ' The state of this chain signal.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.chain_signal_state'
+  
+  'LuaEntity.to_be_looted':
+    'prefix': 'to_be_looted'
+    'body': 'to_be_looted'
+    'description': ' Will this entity be picked up automatically when the player walks over it?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.to_be_looted'
+  
+  'LuaEntity.crafting_progress':
+    'prefix': 'crafting_progress'
+    'body': 'crafting_progress'
+    'description': ' The current crafting progress, as a number in range [0, 1].'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.crafting_progress'
+  
+  'LuaEntity.bonus_progress':
+    'prefix': 'bonus_progress'
+    'body': 'bonus_progress'
+    'description': ' The current productivity bonus progress, as a number in range [0, 1].'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.bonus_progress'
+  
+  'LuaEntity.belt_to_ground_type':
+    'prefix': 'belt_to_ground_type'
+    'body': 'belt_to_ground_type'
+    'description': '  or , depending on whether this underground belt goes down or up.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.belt_to_ground_type'
+  
+  'LuaEntity.loader_type':
+    'prefix': 'loader_type'
+    'body': 'loader_type'
+    'description': '  or , depending on whether this loader puts to or gets from a container.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.loader_type'
+  
+  'LuaEntity.rocket_parts':
+    'prefix': 'rocket_parts'
+    'body': 'rocket_parts'
+    'description': ' Number of rocket parts in the silo.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.rocket_parts'
+  
+  'LuaEntity.logistic_network':
+    'prefix': 'logistic_network'
+    'body': 'logistic_network'
+    'description': ' The logistic network this entity is a part of.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.logistic_network'
+  
+  'LuaEntity.logistic_cell':
+    'prefix': 'logistic_cell'
+    'body': 'logistic_cell'
+    'description': ' The logistic cell this entity is a part of.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.logistic_cell'
+  
+  'LuaEntity.item_requests':
+    'prefix': 'item_requests'
+    'body': 'item_requests'
+    'description': '  Items this ghost will request when revived.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.item_requests'
+  
+  'LuaEntity.player':
+    'prefix': 'player'
+    'body': 'player'
+    'description': ' The player connected to this character.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.player'
+  
+  'LuaEntity.unit_group':
+    'prefix': 'unit_group'
+    'body': 'unit_group'
+    'description': ' The unit group this unit is a member of, or  if none.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.unit_group'
+  
+  'LuaEntity.damage_dealt':
+    'prefix': 'damage_dealt'
+    'body': 'damage_dealt'
+    'description': ' The damage dealt by this turret.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.damage_dealt'
+  
+  'LuaEntity.kills':
+    'prefix': 'kills'
+    'body': 'kills'
+    'description': ' The number of units killed by this turret.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.kills'
+  
+  'LuaEntity.built_by':
+    'prefix': 'built_by'
+    'body': 'built_by'
+    'description': ' The player who built the entity  '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.built_by'
+  
+  'LuaEntity.electric_buffer_size':
+    'prefix': 'electric_buffer_size'
+    'body': 'electric_buffer_size'
+    'description': ' The buffer size for the electric energy source or nil if the entity doesn't have an electric energy source.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.electric_buffer_size'
+  
+  'LuaEntity.electric_input_flow_limit':
+    'prefix': 'electric_input_flow_limit'
+    'body': 'electric_input_flow_limit'
+    'description': ' The input flow limit for the electric energy source or nil if the entity doesn't have an electric energy source.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.electric_input_flow_limit'
+  
+  'LuaEntity.electric_output_flow_limit':
+    'prefix': 'electric_output_flow_limit'
+    'body': 'electric_output_flow_limit'
+    'description': ' The output flow limit for the electric energy source or nil if the entity doesn't have an electric energy source.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.electric_output_flow_limit'
+  
+  'LuaEntity.electric_drain':
+    'prefix': 'electric_drain'
+    'body': 'electric_drain'
+    'description': ' The electric drain for the electric energy source or nil if the entity doesn't have an electric energy source.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.electric_drain'
+  
+  'LuaEntity.electric_emissions':
+    'prefix': 'electric_emissions'
+    'body': 'electric_emissions'
+    'description': ' The emissions size for the electric energy source or nil if the entity doesn't have an electric energy source.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.electric_emissions'
+  
+  'LuaEntity.unit_number':
+    'prefix': 'unit_number'
+    'body': 'unit_number'
+    'description': '  The unit number or nil if the entity doesn't have one.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.unit_number'
+  
+  'LuaEntity.mining_progress':
+    'prefix': 'mining_progress'
+    'body': 'mining_progress'
+    'description': ' The mining progress for this mining drill or  if this isn't a mining drill.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.mining_progress'
+  
+  'LuaEntity.bonus_mining_progress':
+    'prefix': 'bonus_mining_progress'
+    'body': 'bonus_mining_progress'
+    'description': ' The bonus mining progress for this mining drill or  if this isn't a mining drill.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.bonus_mining_progress'
+  
+  'LuaEntity.power_production':
+    'prefix': 'power_production'
+    'body': 'power_production'
+    'description': ' The power production specific to the ElectricEnergyInterface entity type.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.power_production'
+  
+  'LuaEntity.power_usage':
+    'prefix': 'power_usage'
+    'body': 'power_usage'
+    'description': ' The power usage specific to the ElectricEnergyInterface entity type.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.power_usage'
+  
+  'LuaEntity.bounding_box':
+    'prefix': 'bounding_box'
+    'body': 'bounding_box'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.bounding_box'
+  
+  'LuaEntity.mining_target':
+    'prefix': 'mining_target'
+    'body': 'mining_target'
+    'description': '  The mining target or  if none '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.mining_target'
+  
+  'LuaEntity.circuit_connected_entities':
+    'prefix': 'circuit_connected_entities'
+    'body': 'circuit_connected_entities'
+    'description': ' Entities connected to this entity via the circuit network.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.circuit_connected_entities'
+  
+  'LuaEntity.circuit_connection_definitions':
+    'prefix': 'circuit_connection_definitions'
+    'body': 'circuit_connection_definitions'
+    'description': ' The connection definition for entities connected to this entity via the circuit network.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.circuit_connection_definitions'
+  
+  'LuaEntity.request_slot_count':
+    'prefix': 'request_slot_count'
+    'body': 'request_slot_count'
+    'description': ' The number of request slots this entity has.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.request_slot_count'
+  
+  'LuaEntity.filter_slot_count':
+    'prefix': 'filter_slot_count'
+    'body': 'filter_slot_count'
+    'description': ' The number of filter slots this inserter or loader has.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.filter_slot_count'
+  
+  'Common.valid':
+    'prefix': 'valid'
+    'body': 'valid'
+    'description': '        Is this object valid?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/Common.html#Common.valid'
+  

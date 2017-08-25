@@ -1,0 +1,26 @@
+'.source.lua':
+
+  'LuaDamagePrototype.name':
+    'prefix': 'name'
+    'body': 'name'
+    'description': '  Name of this prototype.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaDamagePrototype.html#LuaDamagePrototype.name'
+  
+  'LuaDamagePrototype.order':
+    'prefix': 'order'
+    'body': 'order'
+    'description': '  Order string of this prototype.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaDamagePrototype.html#LuaDamagePrototype.order'
+  
+  'LuaDamagePrototype.localised_name':
+    'prefix': 'localised_name'
+    'body': 'localised_name'
+    'description': ' '
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaDamagePrototype.html#LuaDamagePrototype.localised_name'
+  
+  'Common.valid':
+    'prefix': 'valid'
+    'body': 'valid'
+    'description': '        Is this object valid?'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/Common.html#Common.valid'
+  
