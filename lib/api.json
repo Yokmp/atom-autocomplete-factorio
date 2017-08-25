@@ -1,6 +1,4 @@
 [
-<<<<<<< HEAD
-
   {
     "text": "on_init(f)",
     "type": "Unknown",
@@ -16717,5 +16715,4 @@
     "description": " All methods, and properties that this object supports.",
     "label": "LuaVirtualSignalPrototype",
     "version": "0.15.33"
->>>>>>> bf5c4e09d63d9a880a9d0119aa3923ae9849f02b
   }]
