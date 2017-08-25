@@ -81,5 +81,4 @@ for ($i=0; $i < $sum; $i++) {
 }
 #file_put_contents($newfilename,"\n]", FILE_APPEND);
 echo "Finished processing. Cleaning up ... ";
-
 unlink ( $file );
