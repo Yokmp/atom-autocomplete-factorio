@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # atom-autocomplete-factorio
 
 An autocomplete for Factorios LUA-API.
@@ -19,7 +18,7 @@ Or under docs-html in you local Factorio installation.
 * rewrite autogeneration scripts
  '-> use only one language
 
-=======
+
 
 Factorio Lua API autocomplete for Atom.
 Factorio version is 0.15.33. To create one for your version please scoll down.
@@ -46,4 +45,3 @@ You need a couple of extra Programms.
 - execute ```source start.sh```
 - Wait.
 - Restart Atom ([CTRL]+[SHIFT]+[F5]).
->>>>>>> bf5c4e09d63d9a880a9d0119aa3923ae9849f02b
