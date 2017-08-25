@@ -24,10 +24,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Yokmp/atom-autocomplete-factorio.git"
+    "url": "https://github.com/Yokmp/atom-autocomplete-factorio"
   },
   "bugs": {
-    "url": "ghttps://github.com/Yokmp/atom-autocomplete-factorio/issues"
+    "url": "https://github.com/Yokmp/atom-autocomplete-factorio/issues"
   },
   "providedServices": {
     "autocomplete.provider": {
