@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #********* START configuration
-pathtodocs="/cygdrive/d/Factorio/doc-html"
+pathtodocs="/cygdrive/f/Steam/SteamApps/common/Factorio/doc-html"
 #*********** END configuration
 
 function hbar()
@@ -28,14 +28,19 @@ clear
 hbar _
 echo -ne "Creating Directory \e[1;31mtemp\e[0m ... "
 mkdir -p temp
+rm -f ../lib/api.json
 echo -e "done!\n"
 
+echo "[" > ../lib/api.json
 ls $pathtodocs | grep "^Lua.*html" | while read -r line; do
   hbar
   echo -e "Current File in process:\n\e[1;31m$pathtodocs/$line\e[0m"
   cp -f "$pathtodocs/$line" "$DIR/temp/"
   source prepare.sh "temp/$line"
 done
+cat ../lib/api.json | sed -e '$s/,$/]/'  > ../lib/api2.json
+mv  ../lib/api2.json  ../lib/api.json
+#echo -e "\n]" >> ../lib/api.json
 
 #newdir='Factorio_0.13.16'
 
@@ -48,3 +53,5 @@ echo $newdir
 unset newdir version
 echo -ne "done!\n"
 hbar _
+# move all into one
+# echo *.txt | xargs cat > all.txt

@@ -2,7 +2,7 @@
 
 tempfile="temp.txt"
 source=$1
-file="$(echo $source | head -c-5).xml"
+file="$(echo $source | head -c-5)xml"
 
 if [ -z ${file+x} ] || ! [ -r "$1" ];then
 	echo "File '$1' not found or so."
@@ -25,7 +25,6 @@ else
 
 	 sed -f sed_script.sed "$tempfile" > "$file"
 
-
 	 echo -e "\n</file>" >> "$file"       		# insert xml close tag
 	 cat $file > $tempfile
 	 sum="$(grep -c 'element-name' "$tempfile")"	# count items
@@ -33,6 +32,7 @@ else
 	 echo -e "Found \e[1;31m$sum\e[0m items."
 	 hbar
 	 echo -e "\n"
-	 php index.php $file $sum $newdir
+	 version=$(echo $version | tail -c +10)
+	 php index.php $file $sum $newdir $version
 fi
 echo
