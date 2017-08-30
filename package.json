@@ -7,7 +7,7 @@
     "factorio"
   ],
   "license": "GNU",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "dependencies": {},
   "activationHooks": [
     "language-lua:grammar-used"
