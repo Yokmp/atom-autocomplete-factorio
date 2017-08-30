@@ -7,7 +7,7 @@
     "factorio"
   ],
   "license": "GNU",
-  "version": "1.2.4",
+  "version": "1.1.1",
   "dependencies": {},
   "activationHooks": [
     "language-lua:grammar-used"
@@ -24,10 +24,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Yokmp/atom-autocomplete-factorio"
+    "url": "https://github.com/Yokmp/atom-autocomplete-factorio.git"
   },
   "bugs": {
-    "url": "https://github.com/Yokmp/atom-autocomplete-factorio/issues"
+    "url": "https://github.com/Yokmp/atom-autocomplete-factorio/issues.git"
   },
   "providedServices": {
     "autocomplete.provider": {
