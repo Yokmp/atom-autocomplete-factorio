@@ -4,7 +4,7 @@ An autocomplete for Factorios LUA-API.
 Docs can be found online at http://lua-api.factorio.com/latest/index.html.
 Or under docs-html in you local Factorio installation.
 
-[Screenshot](./shot_1.jpg)
+![ScreenShot](shot_1.jpg)
 
 ### Updates
 * Rewrote from scratch and switched from coffee to js
