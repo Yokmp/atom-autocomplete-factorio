@@ -8,7 +8,7 @@ include_once('functions.inc.php');
 include_once('settings.inc.php');
 include_once('html2xml-09b.php');
 
-error_reporting(DEBUG ? 1 : E_STRICT); // TODO: Implement prober debug mode +feature
+error_reporting(DEBUG ? 1 : E_STRICT); // TODO Implement prober debug mode +feature
 
 if (true) { // TODO implement local filehandling id:2
   echo "\nDownloading latest Document: ";
@@ -25,8 +25,9 @@ if (true) { // TODO implement local filehandling id:2
   echo curl_error($curl) ? exit("\n\t".curl_error($curl)) : "No error";
   curl_close($curl);
 } else {
-  $file = $pathtodocs.DIRECTORY_SEPARATOR."Classes.html";
-  $file = get_absolute_path($file);
+#  $file = $pathtodocs.DIRECTORY_SEPARATOR."Classes.html";
+#  $file = get_absolute_path($file);
+  exit('Unsupported atm.');
 }
 
 $target = $pathtotarget.'classes.xml';
@@ -69,7 +70,7 @@ $version = (string)$xml->body->div->span[1];
 $loop_div = $xml->body->p[2]->children()->count();
 $loop_tr = $xml->body->p[2]->div[0]->div->table->children()->count();
 
-$content = array(); $j = 0; // TESTNG: use json_encode instead of variable id:1 +Testing
+$content = array(); $j = 0; // TESTNG use json_encode instead of variable id:1 +testing
 
 // Loop over both Files
 for ($i=0; $i<$loop_div; $i++) {      // Class loop
@@ -82,14 +83,14 @@ for ($i=0; $i<$loop_div; $i++) {      // Class loop
 
 // Get the actual NAME
     $text = (string)$xml->body->p[2]->div[$i]->div->table->tr[$k]->td[0]->span->a;
-    $text .= (string)$xml->body->p[2]->div[$i]->div->table->tr[$k]->td[0]->span; // TESTING: find a better solution for bracets +testing
+    $text .= (string)$xml->body->p[2]->div[$i]->div->table->tr[$k]->td[0]->span; // TESTING find a better solution for bracets +testing
     $text = str_replace ( ')' , ') )' , $text );
     $text = explode(" )", $text);
     $text = clean_string($text);
     $text = clean_string($text, 'esc');
 
 // Get the TYPE
-    $type[0] = 'void'; // TESTING: Find a better Solution to figure out the type of a suggestion id:0 +testing
+    $type[0] = 'void'; // TESTING Find a better Solution to figure out the type of a suggestion id:0 +testing
     $type[1] = (string)$xml->body->p[2]->div[$i]->div->table->tr[$k]->td[0]->span->span->a;
     $type[2] = (string)$xml->body->p[2]->div[$i]->div->table->tr[$k]->td[0]->span->span->span->a;
     $type[3] = (string)$xml->body->p[2]->div[$i]->div->table->tr[$k]->td[0]->span[1]->span->a;
