@@ -1,5 +1,5 @@
 <?php
-// Copyright (C) 2008 Alain COUTHURES
+/* Copyright (C) 2008 Alain COUTHURES
 //
 // This program is free software; you can redistribute it and/or
 // modify it under the terms of the GNU General Public License
@@ -14,6 +14,10 @@
 // You should have received a copy of the GNU General Public License
 // along with this program; if not, write to the Free Software
 // Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+
+Added option to replace entities with one Whitespace
+see Line 650   ~Yokmp 01.09.17
+*/
 $namedentities["AElig"] = 198;
 $namedentities["Aacute"] = 193;
 $namedentities["Acirc"] = 194;
@@ -281,7 +285,12 @@ define("states_tillgt", 13);
 define("states_tillquote", 14);
 define("states_tillinst", 15);
 define("states_andgt", 16);
-function html2xml($s) {
+
+function html2xml($s, $replace_entities = false) {
+
+	if (isset($argv[1]) && $argv[1] == true) {
+		$replace_entities = true;
+	}
 	global $namedentities, $emptytags, $autoclosetags, $autoclosekeys;
 	$r2 = "";
 	$r = "";
@@ -642,7 +651,11 @@ function html2xml($s) {
 					if(in_array($name, array_keys($namedentities))) {
 						$entvalue = $namedentities[$name];
 					}
-					$ent = "&#".$entvalue.";";
+					if ($replace_entities) {
+						$ent = ' ';
+					} else {
+						$ent = "&#".$entvalue.";";
+					}
 					$name = "";
 					if($prevstate==states_text) {
 						$r .= $ent;

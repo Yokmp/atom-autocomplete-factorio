@@ -44,13 +44,14 @@ $target = get_absolute_path($target);
 $builtins = get_absolute_path($builtins);
 
 echo "\n\nGenerating Builtins XML from HTML. This may take a while ...";
-$result = html2xml($built_file);
+$result = html2xml($built_file, true);
 $handle = fopen($builtins, "wb");
 fwrite($handle, $result);
 fclose($handle);
 
 echo "\nGenerating Document XML from HTML. This may take a while ...";
-$result = html2xml($doc_file);
+
+$result = html2xml($doc_file, true);
 $handle = fopen($target, "wb");
 fwrite($handle, $result);
 fclose($handle);
@@ -62,6 +63,7 @@ echo "No error";
 
 echo "\n\n\t\t.:: Parsing XMLs ::.";
 // get all the Builtin-Types
+echo "\n\t - Builtins";
 $xml = simplexml_load_file($builtins);
 $loop_div = $xml->body->div[1]->children()->count();
 $builtins_arr = array();
@@ -71,6 +73,7 @@ for ($i=0; $i<$loop_div; $i++) {
 }
 
 // Load XML, Get the Version and set the vars for the Loops
+echo "\n\t - Classes";
 $xml = simplexml_load_file($target);
 $version = (string)$xml->body->div->span[1];
 $loop_div = $xml->body->p[2]->children()->count();
@@ -97,7 +100,9 @@ echo "\n\t$label:  $loop_tr";
     $text = str_replace ( ')' , ') )' , $text );
     $text = explode(" )", $text);
     $text = clean_string($text);
-    $text = clean_string($text, 'esc');
+    $text = str_replace ( '=' , '= ' , $text );
+
+echo "\n\t\t$text[0]";
 
 // Get the TYPE
     $type[0] = 'void'; // TESTING Find a better Solution to figure out the type of a suggestion id:0 +testing

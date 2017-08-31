@@ -329,7 +329,7 @@
         "version": "Factorio 0.15.34"
     },
     {
-        "text": "set_gui_arrow{type=\u2026}",
+        "text": "set_gui_arrow{type= }",
         "type": "void",
         "description": "Create an arrow which points at this entity.",
         "label": "LuaControl",
@@ -420,7 +420,7 @@
         "version": "Factorio 0.15.34"
     },
     {
-        "text": "begin_crafting{count=\u2026,recipe=\u2026,silent=\u2026}\u2192",
+        "text": "begin_crafting{count= ,recipe= ,silent= }",
         "type": "uint",
         "description": "Begins crafting the given count of the given recipe",
         "label": "LuaControl",
@@ -1127,7 +1127,7 @@
         "version": "Factorio 0.15.34"
     },
     {
-        "text": "add_market_item{price=\u2026,offer=\u2026}",
+        "text": "add_market_item{price= ,offer= }",
         "type": "void",
         "description": "Offer a thing on the market.",
         "label": "LuaEntity",
@@ -1274,7 +1274,7 @@
         "version": "Factorio 0.15.34"
     },
     {
-        "text": "get_connected_rail{rail_direction=\u2026,rail_connection_direction=\u2026}\u2192",
+        "text": "get_connected_rail{rail_direction= ,rail_connection_direction= }",
         "type": "void",
         "description": "No Description available.",
         "label": "LuaEntity",
@@ -2842,7 +2842,7 @@
         "version": "Factorio 0.15.34"
     },
     {
-        "text": "take{position=\u2026,equipment=\u2026}\u2192",
+        "text": "take{position= ,equipment= }",
         "type": "void",
         "description": "Remove an equipment from the grid.",
         "label": "LuaEquipmentGrid",
@@ -2863,21 +2863,21 @@
         "version": "Factorio 0.15.34"
     },
     {
-        "text": "put{name=\u2026,position=\u2026}\u2192",
+        "text": "put{name= ,position= }",
         "type": "void",
         "description": "Insert an equipment into the grid.",
         "label": "LuaEquipmentGrid",
         "version": "Factorio 0.15.34"
     },
     {
-        "text": "can_move{equipment=\u2026,position=\u2026}\u2192",
+        "text": "can_move{equipment= ,position= }",
         "type": "boolean",
         "description": "Check whether moving an equipment would succeed.",
         "label": "LuaEquipmentGrid",
         "version": "Factorio 0.15.34"
     },
     {
-        "text": "move{equipment=\u2026,position=\u2026}\u2192",
+        "text": "move{equipment= ,position= }",
         "type": "boolean",
         "description": "Move an equipment within this grid.",
         "label": "LuaEquipmentGrid",
@@ -4074,7 +4074,7 @@
         "version": "Factorio 0.15.34"
     },
     {
-        "text": "set_game_state{game_finished=\u2026,player_won=\u2026,next_level=\u2026,can_continue=\u2026}",
+        "text": "set_game_state{game_finished= ,player_won= ,next_level= ,can_continue= }",
         "type": "void",
         "description": "Set scenario state.",
         "label": "LuaGameScript",
@@ -4088,7 +4088,7 @@
         "version": "Factorio 0.15.34"
     },
     {
-        "text": "show_message_dialog{text=\u2026,image=\u2026,point_to=\u2026}",
+        "text": "show_message_dialog{text= ,image= ,point_to= }",
         "type": "void",
         "description": "Show an in-game message dialog.",
         "label": "LuaGameScript",
@@ -4137,7 +4137,7 @@
         "version": "Factorio 0.15.34"
     },
     {
-        "text": "take_screenshot{player=\u2026,by_player=\u2026,position=\u2026,resolution=\u2026,zoom=\u2026,path=\u2026,show_gui=\u2026,show_entity_info=\u2026,anti_alias=\u2026}",
+        "text": "take_screenshot{player= ,by_player= ,position= ,resolution= ,zoom= ,path= ,show_gui= ,show_entity_info= ,anti_alias= }",
         "type": "void",
         "description": "Take a screenshot and save it to a file.",
         "label": "LuaGameScript",
@@ -4522,7 +4522,7 @@
         "version": "Factorio 0.15.34"
     },
     {
-        "text": "add{type=\u2026,name=\u2026,style=\u2026}\u2192",
+        "text": "add{type= ,name= ,style= }",
         "type": "void",
         "description": "Add a child element.",
         "label": "LuaGuiElement",
@@ -5495,14 +5495,14 @@
         "version": "Factorio 0.15.34"
     },
     {
-        "text": "build_blueprint{surface=\u2026,force=\u2026,position=\u2026,force_build=\u2026,direction=\u2026}\u2192",
+        "text": "build_blueprint{surface= ,force= ,position= ,force_build= ,direction= }",
         "type": "void",
         "description": "Build this blueprint",
         "label": "LuaItemStack",
         "version": "Factorio 0.15.34"
     },
     {
-        "text": "create_blueprint{surface=\u2026,force=\u2026,area=\u2026,always_include_tiles=\u2026}",
+        "text": "create_blueprint{surface= ,force= ,area= ,always_include_tiles= }",
         "type": "void",
         "description": "Sets up this blueprint using the found blueprintable entities\/tiles on the surface.",
         "label": "LuaItemStack",
@@ -6300,7 +6300,7 @@
         "version": "Factorio 0.15.34"
     },
     {
-        "text": "set_controller{type=\u2026,character=\u2026}",
+        "text": "set_controller{type= ,character= }",
         "type": "void",
         "description": "Set the controller type of the player.",
         "label": "LuaPlayer",
@@ -6363,14 +6363,14 @@
         "version": "Factorio 0.15.34"
     },
     {
-        "text": "remove_alert{entity=\u2026,prototype=\u2026,position=\u2026,type=\u2026,surface=\u2026,icon=\u2026,message=\u2026}",
+        "text": "remove_alert{entity= ,prototype= ,position= ,type= ,surface= ,icon= ,message= }",
         "type": "void",
         "description": "Removes all alerts matching the given filters or if an empty filters table is given all alerts are removed.",
         "label": "LuaPlayer",
         "version": "Factorio 0.15.34"
     },
     {
-        "text": "get_alerts{entity=\u2026,prototype=\u2026,position=\u2026,type=\u2026,surface=\u2026}\u2192",
+        "text": "get_alerts{entity= ,prototype= ,position= ,type= ,surface= }",
         "type": "void",
         "description": "Gets all alerts matching the given filters or if no filters are given all alerts are returned.",
         "label": "LuaPlayer",
@@ -7140,7 +7140,7 @@
         "version": "Factorio 0.15.34"
     },
     {
-        "text": "can_place_entity{name=\u2026,position=\u2026,direction=\u2026,force=\u2026}\u2192",
+        "text": "can_place_entity{name= ,position= ,direction= ,force= }",
         "type": "boolean",
         "description": "Check for collisions with terrain or other entities.",
         "label": "LuaSurface",
@@ -7161,14 +7161,14 @@
         "version": "Factorio 0.15.34"
     },
     {
-        "text": "find_entities_filtered{area=\u2026,position=\u2026,name=\u2026,type=\u2026,force=\u2026,limit=\u2026}\u2192",
+        "text": "find_entities_filtered{area= ,position= ,name= ,type= ,force= ,limit= }",
         "type": "void",
         "description": "Find entities of given type or name in a given area.",
         "label": "LuaSurface",
         "version": "Factorio 0.15.34"
     },
     {
-        "text": "count_entities_filtered{area=\u2026,position=\u2026,name=\u2026,type=\u2026,force=\u2026,limit=\u2026}\u2192",
+        "text": "count_entities_filtered{area= ,position= ,name= ,type= ,force= ,limit= }",
         "type": "uint",
         "description": "Count entities of given type or name in a given area.",
         "label": "LuaSurface",
@@ -7196,28 +7196,28 @@
         "version": "Factorio 0.15.34"
     },
     {
-        "text": "find_nearest_enemy{position=\u2026,max_distance=\u2026,force=\u2026}\u2192",
+        "text": "find_nearest_enemy{position= ,max_distance= ,force= }",
         "type": "void",
         "description": "Find the enemy closest to the given position.",
         "label": "LuaSurface",
         "version": "Factorio 0.15.34"
     },
     {
-        "text": "set_multi_command{command=\u2026,unit_count=\u2026,force=\u2026,unit_search_distance=\u2026}\u2192",
+        "text": "set_multi_command{command= ,unit_count= ,force= ,unit_search_distance= }",
         "type": "uint",
         "description": "Give a command to multiple units.",
         "label": "LuaSurface",
         "version": "Factorio 0.15.34"
     },
     {
-        "text": "create_entity{name=\u2026,position=\u2026,direction=\u2026,force=\u2026,target=\u2026,source=\u2026,fast_replace=\u2026,player=\u2026,spill=\u2026}\u2192",
+        "text": "create_entity{name= ,position= ,direction= ,force= ,target= ,source= ,fast_replace= ,player= ,spill= }",
         "type": "void",
         "description": "Create an entity on this surface.",
         "label": "LuaSurface",
         "version": "Factorio 0.15.34"
     },
     {
-        "text": "create_unit_group{position=\u2026,force=\u2026}\u2192",
+        "text": "create_unit_group{position= ,force= }",
         "type": "void",
         "description": "Create a new unit group at a given position.",
         "label": "LuaSurface",
@@ -7294,14 +7294,14 @@
         "version": "Factorio 0.15.34"
     },
     {
-        "text": "deconstruct_area{area=\u2026,force=\u2026}",
+        "text": "deconstruct_area{area= ,force= }",
         "type": "void",
         "description": "Place a deconstruction request.",
         "label": "LuaSurface",
         "version": "Factorio 0.15.34"
     },
     {
-        "text": "cancel_deconstruct_area{area=\u2026,force=\u2026}",
+        "text": "cancel_deconstruct_area{area= ,force= }",
         "type": "void",
         "description": "Cancel a deconstruction order.",
         "label": "LuaSurface",
@@ -7357,7 +7357,7 @@
         "version": "Factorio 0.15.34"
     },
     {
-        "text": "create_decoratives{check_collision=\u2026,decoratives=\u2026}",
+        "text": "create_decoratives{check_collision= ,decoratives= }",
         "type": "void",
         "description": "Adds the given decoratives to the surface.",
         "label": "LuaSurface",
