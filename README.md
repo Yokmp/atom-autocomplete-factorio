@@ -1,5 +1,4 @@
 # atom-autocomplete-factorio
-[![Dependency Status](https://david-dm.org/Yokmp/atom-autocomplete-factorio.git)](https://david-dm.org/atom/language-todo)
 
 An autocomplete for Factorios LUA-API.
 Docs can be found online at http://lua-api.factorio.com/latest/index.html.

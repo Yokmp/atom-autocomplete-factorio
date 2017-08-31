@@ -8,11 +8,11 @@ include_once('functions.inc.php');
 include_once('settings.inc.php');
 include_once('html2xml-09b.php');
 
-error_reporting(DEBUG ? 1 : E_STRICT); // TODO Implement proper debug mode +feature
+error_reporting(DEBUG ? 1 : E_STRICT); // FEATURE Implement proper debug mode
 
-if (DEBUG) { // TODO: Should Debugmode only use local files?
+if (DEBUG) { // TODO Should Debugmode only use local files?
   $json_file = 'test.json';
-  echo "\n\t\t DEBUG MODE ENABLED\n\t\tSaving in 'test.json'\n\n";
+  echo "\n\t\t.:: DEBUG MODE ENABLED ::.\n\t\tSaving in 'test.json'\n\n";
   unlink($json_file);
 } else {
   $json_file = '../lib/api.json';
@@ -85,7 +85,7 @@ for ($i=0; $i<$loop_div; $i++) {      // Class loop
   $label = (string)$xml->body->p[2]->div[$i]->div->span->a;
   $label = clean_string( $label );
 
-// BUG doesnt seem to get all methods ...
+// TESTING: doesnt seem to get all methods ...
 $loop_tr = $xml->body->p[2]->div[$i]->div->table->children()->count();
 echo "\n\t$label:  $loop_tr";
 
