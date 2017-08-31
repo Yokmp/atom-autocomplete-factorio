@@ -20,9 +20,9 @@ Or under docs-html in your local Factorio installation.
 
 ### ToDo
 * rewrite autogeneration scripts
- :- use only one language - Done
- :- a better method to get the type - testing
- :- implement the posibility to use the local Documentation as source
+* [x] use only one language - Done
+* [ ] testing new way to get the type
+* [ ] implement the posibility to use the local Documentation as source
 
 ###
 Factorio Lua API autocomplete for Atom.
@@ -32,17 +32,16 @@ Factorio version in this Package is 0.15.34. To create one for your version plea
 
 ### How to create Suggestions for another Version?
 
-You need PHP 5.x, so get that first
+You need PHP 5.x, so get that first (see below).
 I didn't test it with PHP7 so expect the script to fail. There is an option to enable debug mode.
 To enable this, open up the settings.inc.php file and set DEBUG = true
 This will download both HTML files, converts them, creates the json file and saves everything under
-:- ./autogen/builtins.xml
-:- ./autogen/classes.xml
-:- ./autogen/test.json
+- ./autogen/builtins.xml
+- ./autogen/classes.xml
+- ./autogen/test.json
 
-+ Download and install PHP5+.
-+ Get this Repository.
-+ Now your downloaded Repo.
++ Download and install [PHP5+](http://php.net/downloads.php).
++ Get this Repository (here or with Atoms Package Manager).
 + Start a Shell and navigate to ```.atom/packages/autocomplete-lua-factorio/autogen/```.
 + In your shell, type <code>php start.php</code>.
 + You can do some configurations in ```settings.inc.php```.
