@@ -1,8 +1,9 @@
 # atom-autocomplete-factorio
+[![Dependency Status](https://david-dm.org/Yokmp/atom-autocomplete-factorio.git)](https://david-dm.org/atom/language-todo)
 
 An autocomplete for Factorios LUA-API.
 Docs can be found online at http://lua-api.factorio.com/latest/index.html.
-Or under docs-html in you local Factorio installation.
+Or under docs-html in your local Factorio installation.
 
 ![ScreenShot](shot_1.jpg)
 
@@ -14,7 +15,7 @@ Or under docs-html in you local Factorio installation.
 
 ### Known Issues
 * Due to Factorios incoherent html files it is not always possible
-  to get everything at it's preg_replace
+  to get everything at it's place
 * Toggle doesn't work atm
 * When the Devs update their Docs then expect the autogen Script to fail
 

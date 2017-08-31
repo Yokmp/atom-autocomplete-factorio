@@ -1,10 +1,8 @@
 <?php
 
 #********* START configuration
-// path to your Factorio installations doc-html directory
+// path to your Factorio installations doc-html directory (not implemented atm)
 $pathtodocs='F:\Steam\SteamApps\common\Factorio\doc-html';
-// path to ypur target file
-$pathtotarget = '';
 // turn debugmode on or off
 const DEBUG = false;
 #*********** END configuration
