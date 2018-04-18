@@ -1,7 +1,7 @@
 <?php
 /*
-  This code is written at Factorio 0.15.33
-  I can not guarantee, that it will do so
+  This code is written at Factorio 0.15.34
+  I can not guarantee, that it will work
   in future versions. Keep that in mind.
 */
 include_once('functions.inc.php');
@@ -18,7 +18,7 @@ if (DEBUG) { // TODO Should Debugmode only use local files?
   $json_file = '../lib/api.json';
 }
 
-if (true) { // TODO implement local filehandling id:2
+if (true) { // TODO implement local filehandling
   echo "\nDownloading latest Builtins: ";
   $curl = curl_init("http://lua-api.factorio.com/latest/Builtin-Types.html");
   curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
@@ -95,8 +95,8 @@ echo "\n\t$label:  $loop_tr";
   for ($k=0; $k<$loop_tr; $k++) {    // Method loop
 
 // Get the actual NAME
-    $text = (string)$xml->body->p[2]->div[$i]->div->table->tr[$k]->td[0]->span->a;
-    $text .= (string)$xml->body->p[2]->div[$i]->div->table->tr[$k]->td[0]->span; // TESTING find a better solution for bracets +testing
+    $text = (string)$xml->body->p[2]->div[$i]->div->table->tr[$k]->td[0]->span->a; // BUG returns wrong anchorname for MoreURL
+    $text .= (string)$xml->body->p[2]->div[$i]->div->table->tr[$k]->td[0]->span; // TESTING find a better solution for bracets
     $text = str_replace ( ')' , ') )' , $text );
     $text = explode(" )", $text);
     $text = clean_string($text);
@@ -105,7 +105,7 @@ echo "\n\t$label:  $loop_tr";
 echo "\n\t\t$text[0]";
 
 // Get the TYPE
-    $type[0] = 'void'; // TESTING Find a better Solution to figure out the type of a suggestion id:0 +testing
+    $type[0] = 'void'; // TESTING Find a better Solution to figure out the type of a suggestion
     $type[1] = (string)$xml->body->p[2]->div[$i]->div->table->tr[$k]->td[0]->span->span->a;
     $type[2] = (string)$xml->body->p[2]->div[$i]->div->table->tr[$k]->td[0]->span->span->span->a;
     $type[3] = (string)$xml->body->p[2]->div[$i]->div->table->tr[$k]->td[0]->span[1]->span->a;

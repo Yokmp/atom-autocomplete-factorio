@@ -7,13 +7,13 @@
     "factorio"
   ],
   "license": "GNU",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "dependencies": {},
   "activationHooks": [
     "language-lua:grammar-used"
   ],
-  "description": "Factorio's Lua API autocomplete support in Atom", 
-  "readme": "# Autocomplete-Factorio-api package\n\nAn autocompletition for Factorio's LUA-API .\n\n### Updates\n[x] resolved some Bugs\n",
+  "description": "Factorio's Lua API autocomplete support in Atom",
+  "readme": "# Autocomplete-Factorio-api package\n\nAn autocompletition for Factorio's LUA-API .\n![ScreenShot](shot_1.jpg)",
   "readmeFilename": "README.md",
   "author": {
     "name": "Yokmp",

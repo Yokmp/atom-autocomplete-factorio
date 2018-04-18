@@ -1,0 +1,8 @@
+'.source.lua':
+  'create_blueprint':
+    'prefix': 'create_blueprint'
+    'body': 'create_blueprint{${1:surface}=$2 ,${3:force}=$4 ,${5:area}=$6 ,${7:always_include_tiles}=$8 }$0'
+    'leftLabelHTML': '<span>LuaItemStack</span>'
+    'rightLabelHTML': '<span>Factorio 0.15.34</span>'
+    'description': 'Sets up this blueprint using the found blueprintable entities\/tiles on the surface.'
+    'descriptionMoreURL': 'http://lua-api.factorio.com/latest/LuaItemStack.html#LuaItemStack.create_blueprint'
