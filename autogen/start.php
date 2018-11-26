@@ -20,15 +20,17 @@ if (DEBUG) { // TODO Should Debugmode only use local files?
 
 if (true) { // TODO implement local filehandling
   echo "\nDownloading latest Builtins: ";
-  $curl = curl_init("http://lua-api.factorio.com/latest/Builtin-Types.html");
+  $curl = curl_init("https://lua-api.factorio.com/latest/Builtin-Types.html");
   curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+  curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
   $built_file = curl_exec($curl);
   echo curl_error($curl) ? exit("\n\t".curl_error($curl)) : "No error";
   curl_close($curl);
 
   echo "\nDownloading latest Document: ";
-  $curl = curl_init("http://lua-api.factorio.com/latest/Classes.html");
+  $curl = curl_init("https://lua-api.factorio.com/latest/Classes.html");
   curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+  curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
   $doc_file = curl_exec($curl);
   echo curl_error($curl) ? exit("\n\t".curl_error($curl)) : "No error";
   curl_close($curl);
@@ -59,7 +61,7 @@ fclose($handle);
 echo "\n\nChecking Files: ";
 check_file($target);
 check_file($builtins);
-echo "No error";
+echo "Existing and not empty.";
 
 echo "\n\n\t\t.:: Parsing XMLs ::.";
 // get all the Builtin-Types
@@ -77,7 +79,7 @@ echo "\n\t - Classes";
 $xml = simplexml_load_file($target);
 $version = (string)$xml->body->div->span[1];
 $loop_div = $xml->body->p[2]->children()->count();
-$content = array(); $j = 0; // TESTNG use json_encode instead of variable id:1 +testing
+$content = array(); $j = 0; // TESTING: use json_encode instead of variable
 
 echo "\n\n$version\n\n   Classes:  $loop_div\n     Methods:";
 
