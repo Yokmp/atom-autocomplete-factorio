@@ -1,7 +1,7 @@
 ## 1.1.3 - XML entities removed
 * added a toggle arg to html2xml-09b.php to ignore all entities
 ## 1.1.2 - Rewritten autogeneration
-* Rewritten sutogeneration
+* Rewritten autogeneration
 * Now only uses PHP + removed Bash dependency
 * activationHooks set to language-lua
 ## 1.1.1 - Coffee to JS
