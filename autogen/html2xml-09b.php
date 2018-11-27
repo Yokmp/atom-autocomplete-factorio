@@ -16,7 +16,8 @@
 // Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 
 Added option to replace entities with one Whitespace
-see Line 650   ~Yokmp 01.09.17
+see Line 654   ~Yokmp 01.09.17
+Added percentage done at Line 322		~Yokmp 27.11.18
 */
 $namedentities["AElig"] = 198;
 $namedentities["Aacute"] = 193;
@@ -318,6 +319,7 @@ function html2xml($s, $replace_entities = false) {
 		$start = 0;
 	}
 	for($i=$start; $i<$limit && (($r2=="" && $r=="") || count($opentags)!=0); $i++) {
+		echo "\r\t ".ceil($i*100/$limit)."%";
 		if(strlen($r) > 10240) {
 			$r2 .= $r;
 			$r = "";
