@@ -1,33 +1,27 @@
 <?php
 
-// TODO: Get File via cURL, ignore SSL
-function get_web_page( $name, $url )
+// TODO: Get local File
+function get_web_page( $url )
 {
     $options = array(
-        CURLOPT_RETURNTRANSFER => true, 		// return web page
-        CURLOPT_HEADER         => false,    		// don't return headers
+        CURLOPT_RETURNTRANSFER => true,     // return web page
+        CURLOPT_HEADER         => false,    // don't return headers
         CURLOPT_FOLLOWLOCATION => true,     // follow redirects
-        CURLOPT_ENCODING       => "",       		// handle all encodings
-        CURLOPT_USERAGENT      => "spider", 	// who am i
-        CURLOPT_AUTOREFERER    => true,     	// set referer on redirect
+        CURLOPT_ENCODING       => "",       // handle all encodings
+        CURLOPT_USERAGENT      => "Mozilla/5.0 (X11; Linux i686; rv:64.0) Gecko/20100101 Firefox/64.0",
+        CURLOPT_AUTOREFERER    => true,     // set referer on redirect
         CURLOPT_CONNECTTIMEOUT => 120,      // timeout on connect
-        CURLOPT_TIMEOUT        => 120,      		// timeout on response
-        CURLOPT_MAXREDIRS      => 10,       		// stop after 10 redirects
-        CURLOPT_SSL_VERIFYPEER => false     	// Disabled SSL Cert checks
+        CURLOPT_TIMEOUT        => 120,      // timeout on response
+        CURLOPT_MAXREDIRS      => 10,       // stop after 10 redirects
+        CURLOPT_SSL_VERIFYPEER => false     // Disabled SSL Cert checks
     );
 
-    $ch      		= curl_init( $url );
+    $ch      = curl_init( $url );
     curl_setopt_array( $ch, $options );
-    $content 	= curl_exec( $ch );
-    $err    		= curl_errno( $ch );
-    $errmsg  	= curl_error( $ch );
-    $header  	= curl_getinfo( $ch );
+    $content = curl_exec( $ch );
+    echo curl_error($ch) ? exit("\n\t".curl_error($ch)) : "No error";
     curl_close( $ch );
-
-    $header['errno']   	= $err;
-    $header['errmsg']  	= $errmsg;
-    $header['content']	= $content;
-    return $header;
+    return $content;
 }
 
 // check File
@@ -46,7 +40,7 @@ function firstSentence($string) {
       $sentences = explode(".", $string);
       if (substr($sentences, -1) == '.' || substr($sentences, -1) == '?') {
         return ltrim($sentences[0]);
-      } else {return ltrim($sentences[0]).".";}
+      } else { return ltrim($sentences[0])."."; }
 }
 
 // Check there's at least one item in the array before accessing it

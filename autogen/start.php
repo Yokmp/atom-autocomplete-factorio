@@ -20,20 +20,9 @@ if (DEBUG) { // TODO Should Debugmode only use local files?
 
 if (true) { // TODO implement local filehandling
   echo "\nDownloading latest Builtins: ";
-  $curl = curl_init("https://lua-api.factorio.com/latest/Builtin-Types.html");
-  curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-  curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
-  $built_file = curl_exec($curl);
-  echo curl_error($curl) ? exit("\n\t".curl_error($curl)) : "No error";
-  curl_close($curl);
-
+  $built_file = get_web_page("https://lua-api.factorio.com/latest/Builtin-Types.html");
   echo "\nDownloading latest Document: ";
-  $curl = curl_init("https://lua-api.factorio.com/latest/Classes.html");
-  curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-  curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
-  $doc_file = curl_exec($curl);
-  echo curl_error($curl) ? exit("\n\t".curl_error($curl)) : "No error";
-  curl_close($curl);
+  $doc_file = get_web_page("https://lua-api.factorio.com/latest/Classes.html");
 } else {
 #  $file = $pathtodocs.DIRECTORY_SEPARATOR."Classes.html";
 #  $file = get_absolute_path($file);
@@ -45,13 +34,13 @@ $builtins = $pathtotarget.'builtins.xml';
 $target = get_absolute_path($target);
 $builtins = get_absolute_path($builtins);
 
-echo "\n\nGenerating Builtins XML from HTML. This may take a while ...";
+echo "\n\nGenerating Builtins XML from HTML. This may take a while ...\n";
 $result = html2xml($built_file, true);
 $handle = fopen($builtins, "wb");
 fwrite($handle, $result);
 fclose($handle);
 
-echo "\nGenerating Document XML from HTML. This may take a while ...";
+echo "\nGenerating Document XML from HTML. This may take a while ...\n";
 
 $result = html2xml($doc_file, true);
 $handle = fopen($target, "wb");
