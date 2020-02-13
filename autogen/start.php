@@ -34,19 +34,19 @@ $builtins = $pathtotarget.'builtins.xml';
 $target = get_absolute_path($target);
 $builtins = get_absolute_path($builtins);
 
-echo "\n\nGenerating Builtins XML from HTML. This may take a while ...\n";
+echo "\n\nGenerating Builtins XML from HTML.\n";
 $result = html2xml($built_file, true);
 $handle = fopen($builtins, "wb");
 fwrite($handle, $result);
 fclose($handle);
 
 echo "\nGenerating Document XML from HTML. This may take a while ...\n";
-
+/*
 $result = html2xml($doc_file, true);
 $handle = fopen($target, "wb");
 fwrite($handle, $result);
 fclose($handle);
-
+*/
 echo "\n\nChecking Files: ";
 check_file($target);
 check_file($builtins);
@@ -73,14 +73,21 @@ $content = array(); $j = 0; // TESTING: use json_encode instead of variable
 echo "\n\n$version\n\n   Classes:  $loop_div\n     Methods:";
 
 // Loop over both Files
-for ($i=0; $i<$loop_div; $i++) {      // Class loop
+for ($i=0; $i<$loop_div; $i++) {      // Class loop i=0
 
 // Get the CLASS
   $label = (string)$xml->body->p[2]->div[$i]->div->span->a;
   $label = clean_string( $label );
 
-// TESTING: doesnt seem to get all methods ...
-$loop_tr = $xml->body->p[2]->div[$i]->div->table->children()->count();
+// Calculate the amount of loops for the current table
+// TESTING doesnt seem to get all methods ...
+// BUG fails hard
+//$loop_tr = $xml->body->p[2]->div[$i]->div->table->children()->count();
+$loop_tr = $xml->body->p[2]->div[0]->table->children()->count();
+
+echo "\n\tStep $i/$loop_div\n";
+echo "\n\tlabel: $label: ";
+
 echo "\n\t$label:  $loop_tr";
 
   for ($k=0; $k<$loop_tr; $k++) {    // Method loop
@@ -120,7 +127,8 @@ echo "\n\t\t$text[0]";
 
 // generate the json File and save it
 echo "\n\nEncoding json: ";
-$json = array_values($content);
+$json = array_values(array_unique($content, SORT_REGULAR));
+//$json = array_values(unique_array($json,'text'));
 $json = json_encode($json, JSON_PRETTY_PRINT);
 echo json_last_error_msg();
 
@@ -137,8 +145,8 @@ if (DEBUG) {
   echo "\nWriting into $json_file.";
   file_put_contents($json_file, $json);
   echo "\n\t\t.:: Cleanup ::.\n";
-  unlink($target);
-  unlink($builtins);
+//  unlink($target);
+//  unlink($builtins);
   echo "Deleting $target and $builtins";
 }
 echo "\n\n\t\t.:: DONE! ::.\n";

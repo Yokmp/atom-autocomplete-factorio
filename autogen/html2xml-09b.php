@@ -16,7 +16,7 @@
 // Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 
 Added option to replace entities with one Whitespace
-see Line 654   ~Yokmp 01.09.17
+see Line 656   ~Yokmp 01.09.17
 Added percentage done at Line 322		~Yokmp 27.11.18
 */
 $namedentities["AElig"] = 198;
