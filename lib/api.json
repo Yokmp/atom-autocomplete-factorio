@@ -1,12 +1,5 @@
 [
     {
-        "text": "",
-        "type": "void",
-        "description": "No Description available.",
-        "label": "",
-        "version": "Factorio 0.18.6"
-    },
-    {
         "text": "allow_destroy_when_commands_fail",
         "type": "boolean",
         "description": "If enabled, units that repeatedly fail to succeed at commands will be destroyed.",

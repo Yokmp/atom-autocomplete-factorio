@@ -19,9 +19,9 @@ if (DEBUG) { // TODO Should Debugmode only use local files?
 }
 
 if (true) { // TODO implement local filehandling
-  echo "\nDownloading latest Builtins: ";
+  echo "\n Downloading latest Builtins: ";
   $built_file = get_web_page("https://lua-api.factorio.com/latest/Builtin-Types.html");
-  echo "\nDownloading latest Document: ";
+  echo "\n Downloading latest Document: ";
   $doc_file = get_web_page("https://lua-api.factorio.com/latest/Classes.html");
 } else {
 #  $file = $pathtodocs.DIRECTORY_SEPARATOR."Classes.html";
@@ -34,25 +34,25 @@ $builtins = $pathtotarget.'builtins.xml';
 $target = get_absolute_path($target);
 $builtins = get_absolute_path($builtins);
 
-echo "\n\nGenerating Builtins XML from HTML.\n";
+echo "\n\n Generating Builtins XML from HTML.\n";
 $result = html2xml($built_file, true);
 $handle = fopen($builtins, "wb");
 fwrite($handle, $result);
 fclose($handle);
 
-echo "\nGenerating Document XML from HTML. This may take a while ...\n";
+echo "\n Generating Document XML from HTML. This may take a while ...\n";
 /*
 $result = html2xml($doc_file, true);
 $handle = fopen($target, "wb");
 fwrite($handle, $result);
 fclose($handle);
 */
-echo "\n\nChecking Files: ";
+echo "\n\n Checking Files: ";
 check_file($target);
 check_file($builtins);
-echo "Existing and not empty.";
+echo " Existing and not empty.";
 
-echo "\n\n\t\t.:: Parsing XMLs ::.";
+echo "\n\n\t\t.:: Parsing XMLs ::.\n";
 // get all the Builtin-Types
 echo "\n\t - Builtins";
 $xml = simplexml_load_file($builtins);
@@ -69,11 +69,12 @@ $xml = simplexml_load_file($target);
 $version = (string)$xml->body->div->span[1];
 $loop_div = $xml->body->p[2]->children()->count();
 $content = array(); $j = 0; // TESTING: use json_encode instead of variable
+$loop_tr = $xml->body->p[2]->div[0]->table->children()->count();
 
-echo "\n\n$version\n\n   Classes:  $loop_div\n     Methods:";
+echo "\n\n $version\n\n   Classes:  $loop_div\n     Methods:  $loop_tr\n";
 
 // Loop over both Files
-for ($i=0; $i<$loop_div; $i++) {      // Class loop i=0
+for ($i=1; $i<$loop_div; $i++) {      // Class loop (i=0, they shifted again)
 
 // Get the CLASS
   $label = (string)$xml->body->p[2]->div[$i]->div->span->a;
@@ -83,12 +84,12 @@ for ($i=0; $i<$loop_div; $i++) {      // Class loop i=0
 // TESTING doesnt seem to get all methods ...
 // BUG fails hard
 //$loop_tr = $xml->body->p[2]->div[$i]->div->table->children()->count();
-$loop_tr = $xml->body->p[2]->div[0]->table->children()->count();
 
-echo "\n\tStep $i/$loop_div\n";
-echo "\n\tlabel: $label: ";
 
-echo "\n\t$label:  $loop_tr";
+echo "\n\t$i: $label";
+//echo "\n\tlabel: $label: ";
+
+
 
   for ($k=0; $k<$loop_tr; $k++) {    // Method loop
 
@@ -100,7 +101,7 @@ echo "\n\t$label:  $loop_tr";
     $text = clean_string($text);
     $text = str_replace ( '=' , '= ' , $text );
 
-echo "\n\t\t$text[0]";
+if (DEBUG) {echo "\n\t\t$text[0]";}
 
 // Get the TYPE
     $type[0] = 'void'; // TESTING Find a better Solution to figure out the type of a suggestion
@@ -126,27 +127,26 @@ echo "\n\t\t$text[0]";
 }
 
 // generate the json File and save it
-echo "\n\nEncoding json: ";
+echo "\n\n Encoding json: ";
 $json = array_values(array_unique($content, SORT_REGULAR));
-//$json = array_values(unique_array($json,'text'));
 $json = json_encode($json, JSON_PRETTY_PRINT);
 echo json_last_error_msg();
 
 // write to file
 if (DEBUG) {
-  echo "\n\nWriting into $json_file";
+  echo "\n\n Writing into $json_file";
   file_put_contents($json_file, $json);
 } else {
-  echo "\n\t\t.:: Backup ::.";
+  echo "\n\n\n\t\t.:: Backup ::.\n";
   $version = str_replace('Factorio ', '', $version);
   $old_file = str_replace('.json', '_', $json_file);
-  echo "\n\nRenaming old File to $old_file$version.json";
+  echo "\n Renaming old File to\t $old_file$version.json";
   rename($json_file, $old_file.$version.'.json');
-  echo "\nWriting into $json_file.";
+  echo "\n Writing into\t\t $json_file.";
   file_put_contents($json_file, $json);
-  echo "\n\t\t.:: Cleanup ::.\n";
+  echo "\n\n\n\t\t.:: Cleanup ::.\n";
 //  unlink($target);
 //  unlink($builtins);
-  echo "Deleting $target and $builtins";
+  echo "\n Deleting $target and $builtins";
 }
-echo "\n\n\t\t.:: DONE! ::.\n";
+echo "\n\n\n\t\t.:: DONE! ::.\n";
