@@ -1,6 +1,6 @@
 # Factorio's Lua API autocompletition for Atom.
 
-An autocomplete for Factorios LUA-API.<br />
+An autocomplete for Factorios LUA-API 0.18.6.<br />
 Their Documentation can be found [HERE](http://lua-api.factorio.com/latest/index.html) or under <i>/docs-html</i> in your local Factorio installation.
 
 ![ScreenShot](.github/shot_1.jpg)
